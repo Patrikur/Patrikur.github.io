@@ -54,7 +54,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 10px;
   margin: 10px;
 }
 
@@ -64,6 +63,7 @@ body {
   background-size: cover;
   width: 400px;
   height: 300px;
+  margin: 1vh;
 }
 
 #meðferðHjáMér {
@@ -72,6 +72,7 @@ body {
   background-size: cover;
   width: 400px;
   height: 300px;
+  margin: 1vh;
 }
 
 #fjarmeðferð {
@@ -80,6 +81,7 @@ body {
   background-size: cover;
   width: 400px;
   height: 300px;
+  margin: 1vh;
 }
 
 #sjálfsvinna {
@@ -88,6 +90,7 @@ body {
   background-size: cover;
   width: 400px;
   height: 300px;
+  margin: 1vh;
 }
 
 #fræðsla {
@@ -96,6 +99,7 @@ body {
   background-size: cover;
   width: 400px;
   height: 300px;
+  margin: 1vh;
 }
 
 #umMig {
@@ -104,6 +108,7 @@ body {
   background-size: cover;
   width: 400px;
   height: 300px;
+  margin: 1vh;
 }
 
 .fld {
