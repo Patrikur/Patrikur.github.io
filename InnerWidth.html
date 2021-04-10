@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Click the button to display this frame's height and width.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p>
+      <strong>Note:</strong> The innerWidth and innerHeight properties are not
+      supported in IE8 and earlier.
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        document.getElementById("demo").innerHTML =
+          "Width: " + w + "<br>Height: " + h;
+      }
+    </script>
+  </body>
+</html>
