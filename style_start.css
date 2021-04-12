@@ -114,7 +114,7 @@ body {
 .fld {
   text-decoration: none;
   color: #0a0a0a;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
   text-transform: uppercase;
   align-items: center;
@@ -139,6 +139,7 @@ body {
 
   .fld {
     transition: transform 0.2s ease-in;
+    font-size: 1.5rem;
   }
 
   .fld:hover {
