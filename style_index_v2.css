@@ -17,7 +17,7 @@ body {
 
 header {
   background-image: url(/Pictures/cropped-hestadraumur_banner_resized_opacity.jpg);
-  height: 50vh;
+  height: 40vh;
   box-shadow: 0 2px 5px #888888;
   margin-top: 3vh;
 }
@@ -25,7 +25,7 @@ header {
 #logo {
   display: block;
   margin: 0 auto;
-  padding: 2vh 0;
+  padding: 1vh 0;
   width: 60vw;
 }
 
@@ -48,7 +48,7 @@ header {
   color: #272c2d;
   border: 2px solid #272c2d;
   background: none;
-  margin: 2vh 2vw;
+  margin: 1vh 2vw;
   padding: 0px;
   text-align: center;
   text-decoration: none;
