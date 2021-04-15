@@ -12,12 +12,14 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 header {
   background-image: url(/Pictures/cropped-hestadraumur_banner_resized_opacity.jpg);
   height: 50vh;
   box-shadow: 0 2px 5px #888888;
+  margin-top: 3vh;
 }
 
 #logo {
@@ -29,11 +31,14 @@ header {
 
 .menu {
   display: flex;
-  flex-flow: row;
+  flex-flow: column nowrap;
   justify-content: center;
   list-style-type: none;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 2vh 0;
   font-style: bold;
 }
 
@@ -50,8 +55,8 @@ header {
   text-transform: uppercase;
   display: inline-block;
   cursor: pointer;
-  width: 175px;
-  height: 50px;
+  width: 40vw;
+  height: 6vh;
 }
 
 .active {
@@ -62,7 +67,7 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 5px;
+  margin: 3vh 0;
 }
 
 #meðferð,
@@ -73,27 +78,49 @@ header {
 #umMig {
   width: 80vw;
   height: auto;
-  margin: 1vh;
+  margin: 1vh 0;
 }
 
 .fld {
   text-decoration: none;
   border: 1px solid #272c2d;
   color: #272c2d;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: lighter;
   text-transform: uppercase;
   align-items: center;
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 40vw;
-  margin: 0 20vw;
+  width: 80vw;
+  height: 5vh;
+  margin: 0;
 }
 
 @media only screen and (min-width: 1045px) {
+  header {
+    background-image: url(/Pictures/cropped-hestadraumur_banner_opacity.jpg);
+    height: 45vh;
+    box-shadow: 0 2px 5px #888888;
+    margin-top: 20vh;
+  }
+
+  #logo {
+    display: block;
+    margin: 0 auto;
+    padding: 2vh 0;
+    width: 25vw;
+  }
+
+  .menu {
+    flex-flow: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
   .btn {
     transition: 0.2s ease-in;
+    width: 15vw;
   }
 
   #isl:hover,
@@ -102,26 +129,33 @@ header {
     transform: scale(1.1);
   }
 
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 5vh 5vw;
+  }
+
   #meðferð,
   #meðferðHjáMér,
   #fjarmeðferð,
   #sjálfsvinna,
   #fræðsla,
   #umMig {
-    width: 400px;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: auto;
+    margin: 0;
   }
 
   .fld {
-    transition: transform 0.2s ease-in;
-    width: 400px;
-    height: 300px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: lighter;
+    width: 1vw;
+    margin: 0 2vw;
+    border: none;
+    display: inline;
   }
 
   .fld:hover {
-    transform: scale(1.1);
+    color: slategray;
   }
 }
