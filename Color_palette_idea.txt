@@ -1,0 +1,3 @@
+Background Hex:ADC1C6
+Footer & Header: HEX 277E93 | 5E98A5
+Schrift: 02718B | 277E93

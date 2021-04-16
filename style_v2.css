@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  text-align: justify;
+}
+
+main h1 {
+  text-align: left;
+}
+
+header {
+  width: 100vw;
+  height: auto;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 5px #888888;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+#logo img {
+  height: 15vh;
+  margin: 0;
+  transform: translateX(-10%);
+}
+
+nav {
+  font-family: "Mulish", sans-serif;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 5vh;
+  left: 3vw;
+  text-align: center;
+  font-weight: bold;
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #272c2d;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #272c2d;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding-top: 125px;
+  box-shadow: 1px 1px 3px grey;
+  background: whitesmoke;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menu img {
+  width: 15%;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+#hiddenMenu {
+  display: none;
+}
+
+#title {
+  background-image: url("/Pictures/cropped-hestadraumur_banner_resized_opacity.jpg");
+  text-align: center;
+  color: #272c2d;
+  font-size: 2.5rem;
+  font-weight: bold;
+  min-height: 40vh;
+  margin: 0;
+  padding: 15vh 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+#title p {
+  text-align: center;
+  color: #272c2d;
+  font-size: 2rem;
+  margin: 5vh 0;
+}
+
+#main {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.25rem;
+  font-style: lighter;
+  margin: 0 5vw 5vh 5vw;
+  height: auto;
+  width: 90vw;
+  padding: 0;
+}
+
+section article {
+  color: #272c2d;
+  text-decoration: none;
+}
+
+#bulb,
+#person,
+#puzzle {
+  margin: 5vh 0;
+  box-shadow: 1px 1px 3px #272c2d;
+  width: 100%;
+  position: initial;
+}
+
+details {
+  cursor: pointer;
+}
+
+summary {
+  margin: 5px;
+}
+
+.meiri {
+  border-radius: 25px;
+  background-color: white;
+  width: 100%;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.meiri a {
+  text-decoration: none;
+  color: #272c2d;
+}
+
+footer {
+  height: auto;
+  font-family: "Mulish", sans-serif;
+  background-color: white;
+  color: #272c2d;
+  margin-bottom: 0;
+  text-align: left;
+  box-shadow: 0 -2px 5px #888888;
+}
+
+footer h3 {
+  padding: 3rem 0 0 5vw;
+  margin: 0;
+}
+
+.address,
+.contact {
+  padding: 1rem 0 1rem 5vw;
+}
+
+.address p,
+.contact p {
+  margin: 10px 0px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #272c2d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footcontainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+}
+
+@media only screen and (min-width: 1180px) {
+  .flexcontainer {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+  }
+
+  #menuToggle {
+    display: none;
+  }
+
+  nav {
+    margin: 0 3vw;
+  }
+
+  #hiddenMenu {
+    display: contents;
+    padding: 0 4vw;
+  }
+
+  #hiddenMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #hiddenMenu li {
+    float: left;
+    margin: 0 2vw;
+  }
+
+  #hiddenMenu a li {
+    display: block;
+    color: #272c2d;
+    text-align: left;
+    text-decoration: none;
+    margin: 5vh 3vh 0 1vh;
+    padding: 0;
+  }
+
+  #hiddenMenu a li:hover {
+    color: slategray;
+  }
+
+  #hiddenMenu img {
+    height: 3vh;
+  }
+
+  #logo img {
+    transform: none;
+    margin: 1vh 1vw 0 4vw;
+    height: 50px;
+  }
+
+  #title {
+    background-image: url("/Pictures/cropped-hestadraumur_banner_resized_opacity.jpg");
+    text-align: center;
+    color: #272c2d;
+    font-size: 2.5rem;
+    font-weight: bold;
+    min-height: 40vh;
+    margin: 0;
+    padding: 15vh 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #main {
+    margin: 0 20vw 5vh 20vw;
+    height: auto;
+    width: 60vw;
+    padding: 0;
+  }
+
+  #bulb,
+  #person,
+  #puzzle {
+    margin: 5vh 20%;
+    box-shadow: 1px 1px 3px #272c2d;
+    width: 60%;
+    position: initial;
+  }
+
+  footer h3 {
+    padding: 3rem 0 0 20vw;
+    margin: 0;
+  }
+
+  .address {
+    padding: 1rem 0 1rem 20vw;
+  }
+
+  .contact {
+    padding: 1rem 0 1rem 5vw;
+  }
+}

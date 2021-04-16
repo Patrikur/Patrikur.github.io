@@ -57,58 +57,40 @@ body {
   margin: 10px;
 }
 
-#meðferð {
-  background: url("/Pictures/Lightbulb_scaled_opacity.jpg");
+#meðferð,
+#meðferðHjáMér,
+#fjarmeðferð,
+#sjálfsvinna,
+#fræðsla,
+#umMig {
+  width: 100%;
+  margin: 1vh;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 400px;
-  height: 300px;
-  margin: 1vh;
+}
+
+#meðferð {
+  background: url("/Pictures/Lightbulb_scaled_opacity.jpg");
 }
 
 #meðferðHjáMér {
   background: url("/Pictures/Therapy_scaled_opacity.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 400px;
-  height: 300px;
-  margin: 1vh;
 }
 
 #fjarmeðferð {
   background: url("/Pictures/Videocall_scaled_opacity.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 400px;
-  height: 300px;
-  margin: 1vh;
 }
 
 #sjálfsvinna {
   background: url("/Pictures/meditation_scaled_opacity.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 400px;
-  height: 300px;
-  margin: 1vh;
 }
 
 #fræðsla {
   background: url("/Pictures/reading_scaled_opacity.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 400px;
-  height: 300px;
-  margin: 1vh;
 }
 
 #umMig {
   background: url("/Pictures/hildur_scaled_opacity.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 400px;
-  height: 300px;
-  margin: 1vh;
 }
 
 .fld {
@@ -121,8 +103,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 225px;
   margin: 0 auto;
 }
 
@@ -137,8 +119,22 @@ body {
     transform: scale(1.1);
   }
 
+  #meðferð,
+  #meðferðHjáMér,
+  #fjarmeðferð,
+  #sjálfsvinna,
+  #fræðsla,
+  #umMig {
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .fld {
     transition: transform 0.2s ease-in;
+    width: 400px;
+    height: 300px;
     font-size: 1.5rem;
   }
 

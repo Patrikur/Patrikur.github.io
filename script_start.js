@@ -17,7 +17,7 @@ function changeLangEng(){
 
 function changeLangIsl(){
     document.getElementById("meðferðLang").text = "Meðferð";
-    document.getElementById("meðferðLang").setAttribute("href", "index.html");
+    document.getElementById("meðferðLang").setAttribute("href", "index_is.html");
     document.getElementById("meðferðHjáMérLang").text = "Meðferð hjá mér";
     document.getElementById("meðferðHjáMérLang").setAttribute("href", "https://salmedferd.is/?page_id=4");
     document.getElementById("fjarmeðferðLang").text = "Fjarmeðferð";

@@ -12,7 +12,6 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #ffffff;
-  overflow: hidden;
 }
 
 header {
@@ -97,6 +96,10 @@ header {
 }
 
 @media only screen and (min-width: 1045px) {
+  body {
+    overflow: hidden;
+  }
+
   header {
     background-image: url(/Pictures/cropped-hestadraumur_banner_opacity.jpg);
     height: 45vh;
