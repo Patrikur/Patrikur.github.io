@@ -19,7 +19,7 @@ main h1 {
 
 header {
   width: 100vw;
-  height: auto;
+  height: 15vh;
   background-color: white;
   position: fixed;
   top: 0;
@@ -35,7 +35,7 @@ header {
 #logo img {
   height: 15vh;
   margin: 0;
-  transform: translateX(-10%);
+  /*transform: translateX(-10%);*/
 }
 
 nav {
@@ -140,7 +140,7 @@ nav {
   margin: -100px 0 0 -50px;
   padding-top: 125px;
   box-shadow: 1px 1px 3px grey;
-  background: whitesmoke;
+  background: white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -172,27 +172,20 @@ nav {
 }
 
 #title {
-  background-image: url("/Pictures/cropped-hestadraumur_banner_resized_opacity.jpg");
+  background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_1500.jpg");
   text-align: center;
-  color: #272c2d;
-  font-size: 2.5rem;
-  font-weight: bold;
-  min-height: 40vh;
-  margin: 0;
-  padding: 15vh 0;
+  color: white;
+  font-size: 3.5rem;
+  height: 40vh;
+  margin: 15vh 0 0 0;
+  padding: 15vh 0 0 0;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
   justify-content: center;
-}
-
-#title p {
-  text-align: center;
-  color: #272c2d;
-  font-size: 2rem;
-  margin: 5vh 0;
+  box-shadow: 0 2px 5px #888888;
 }
 
 #main {
@@ -203,6 +196,7 @@ nav {
   height: auto;
   width: 90vw;
   padding: 0;
+  color: #455063;
 }
 
 section article {
@@ -229,7 +223,7 @@ summary {
 
 .meiri {
   border-radius: 25px;
-  background-color: white;
+  background-color: #c7e6e4;
   width: 100%;
   padding: 5px 10px;
   cursor: pointer;
@@ -244,11 +238,10 @@ summary {
 footer {
   height: auto;
   font-family: "Mulish", sans-serif;
-  background-color: white;
-  color: #272c2d;
+  background-color: #c7e6e4;
+  color: #455063;
   margin-bottom: 0;
   text-align: left;
-  box-shadow: 0 -2px 5px #888888;
 }
 
 footer h3 {
@@ -268,7 +261,7 @@ footer h3 {
 
 .contact a {
   text-decoration: none;
-  color: #272c2d;
+  color: #455063;
   font-weight: bold;
   cursor: pointer;
 }
@@ -313,7 +306,7 @@ footer h3 {
 
   #hiddenMenu a li {
     display: block;
-    color: #272c2d;
+    color: #455063;
     text-align: left;
     text-decoration: none;
     margin: 5vh 3vh 0 1vh;
@@ -330,25 +323,13 @@ footer h3 {
 
   #logo img {
     transform: none;
-    margin: 1vh 1vw 0 4vw;
+    margin: 3vh 1vw 0 4vw;
     height: 50px;
   }
 
   #title {
-    background-image: url("/Pictures/cropped-hestadraumur_banner_resized_opacity.jpg");
-    text-align: center;
-    color: #272c2d;
-    font-size: 2.5rem;
-    font-weight: bold;
-    min-height: 40vh;
-    margin: 0;
-    padding: 15vh 0;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
+    background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_1500.jpg");
+    font-size: 3.5rem;
   }
 
   #main {

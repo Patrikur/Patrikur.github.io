@@ -8,17 +8,19 @@ body {
   font-family: "Mulish", sans-serif;
   font-size: 1rem;
   font-style: bold;
-  color: #272c2d;
+  color: #465886;
   height: 100vh;
   margin: 0;
   background-color: #ffffff;
 }
 
 header {
-  background-image: url(/Pictures/cropped-hestadraumur_banner_resized_opacity.jpg);
+  background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_800.jpg");
   height: 35vh;
   box-shadow: 0 2px 5px #888888;
   margin-top: 3vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #logo {
@@ -44,8 +46,8 @@ header {
 .btn {
   font-family: "Mulish", sans-serif;
   font-size: 1.25rem;
-  color: #272c2d;
-  border: 2px solid #272c2d;
+  color: #bcc5dc;
+  border: 2px solid #bcc5dc;
   background: none;
   margin: 1vh 2vw;
   padding: 0px;
@@ -83,7 +85,7 @@ header {
 .fld {
   text-decoration: none;
   border: 1px solid #272c2d;
-  color: #272c2d;
+  color: #455063;
   font-size: 1.25rem;
   font-weight: lighter;
   text-transform: uppercase;
@@ -101,10 +103,12 @@ header {
   }
 
   header {
-    background-image: url(/Pictures/cropped-hestadraumur_banner_opacity.jpg);
+    background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_1300.jpg");
     height: 45vh;
     box-shadow: 0 2px 5px #888888;
     margin-top: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   #logo {
