@@ -13,6 +13,9 @@ function changeLangEng(){
     document.getElementById("umMigLang").setAttribute("href", "https://salmedferd.is/?page_id=193");
     document.querySelector('#eng').classList.add('active');
     document.querySelector('#isl').classList.remove('active');
+    if (window.screen.width < 501){
+        document.querySelector('.container').style.width = "100%";    
+    }
 }
 
 function changeLangIsl(){
@@ -30,4 +33,11 @@ function changeLangIsl(){
     document.getElementById("umMigLang").setAttribute("href", "https://salmedferd.is/?page_id=13");
     document.querySelector('#eng').classList.remove('active');
     document.querySelector('#isl').classList.add('active');
+    if (window.screen.width < 501){
+        document.querySelector('.container').style.width = "100%";    
+    }
+}
+
+function closeNav() {
+    document.querySelector('.container').style.width = "0";
 }

@@ -12,22 +12,23 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 header {
-  background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_800.jpg");
-  height: 35vh;
+  background-image: url("/Pictures/hestadraumur_banner_mobile.jpg");
+  height: 60vh;
   box-shadow: 0 2px 5px #888888;
-  margin-top: 3vh;
+  margin-top: 20vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #logo {
   display: block;
-  margin: 0 auto;
-  padding: 1vh 0;
-  width: 60vw;
+  margin: 5vh auto;
+  padding: 10vh 0 0 0;
+  width: 300px;
 }
 
 .menu {
@@ -45,30 +46,37 @@ header {
 
 .btn {
   font-family: "Mulish", sans-serif;
-  font-size: 1.25rem;
-  color: #bcc5dc;
-  border: 2px solid #bcc5dc;
+  font-size: 1.5rem;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
   background: none;
-  margin: 1vh 2vw;
+  margin: 0 2vw 2vh 2vw;
   padding: 0px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  cursor: pointer;
-  width: 40vw;
+  width: 80vw;
   height: 6vh;
-}
-
-.active {
-  text-decoration: underline;
 }
 
 .container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 3vh 0;
+  flex-flow: column;
+  justify-content: space-evenly;
+  margin: 0;
+  padding-top: 5vh;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
 }
 
 #meðferð,
@@ -78,34 +86,34 @@ header {
 #fræðsla,
 #umMig {
   width: 80vw;
-  height: auto;
-  margin: 1vh 0;
+  margin: 1vh 10vw;
+}
+
+#tilBaka {
+  position: absolute;
+  top: 3vh;
+  left: 5vw;
+}
+
+#tilBaka a {
+  text-decoration: none;
+  color: #455063;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .fld {
   text-decoration: none;
-  border: 1px solid #272c2d;
   color: #455063;
-  font-size: 1.25rem;
-  font-weight: lighter;
-  text-transform: uppercase;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 80vw;
-  height: 5vh;
-  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-@media only screen and (min-width: 1045px) {
-  body {
-    overflow: hidden;
-  }
-
+@media only screen and (min-width: 1090px) {
   header {
     background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_1300.jpg");
-    height: 45vh;
     box-shadow: 0 2px 5px #888888;
+    height: 45vh;
     margin-top: 20vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,7 +123,7 @@ header {
     display: block;
     margin: 0 auto;
     padding: 2vh 0;
-    width: 25vw;
+    width: 350px;
   }
 
   .menu {
@@ -123,11 +131,19 @@ header {
     align-items: center;
     display: flex;
     justify-content: center;
+    margin: 3vh 1vw;
   }
 
   .btn {
+    font-size: 1.25rem;
     transition: 0.2s ease-in;
-    width: 15vw;
+    width: 200px;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: white;
+    color: #455063;
   }
 
   #isl:hover,
@@ -140,7 +156,18 @@ header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin: 5vh 5vw;
+    margin: 2vh 3vw;
+    padding-top: unset;
+    height: unset;
+    width: unset;
+    position: unset;
+    z-index: unset;
+    top: unset;
+    left: unset;
+    background-color: unset;
+    overflow-x: unset;
+    transition: unset;
+    text-align: unset;
   }
 
   #meðferð,
@@ -150,7 +177,11 @@ header {
   #fræðsla,
   #umMig {
     width: auto;
-    margin: 0;
+    margin: 2vh 0;
+  }
+
+  #tilBaka {
+    display: none;
   }
 
   .fld {
@@ -164,5 +195,95 @@ header {
 
   .fld:hover {
     color: slategray;
+  }
+}
+
+@media only screen and (max-width: 1089.9px) and (min-width: 501px) {
+  header {
+    background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_1300.jpg");
+    box-shadow: 0 2px 5px #888888;
+    height: 45vh;
+    margin-top: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #logo {
+    display: block;
+    margin: 0 auto;
+    padding: 2vh 0;
+    width: 300px;
+  }
+
+  .menu {
+    flex-flow: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 3vh 1vw;
+  }
+
+  .btn {
+    transition: 0.2s ease-in;
+    width: 200px;
+    cursor: pointer;
+  }
+
+  #isl:hover,
+  #eng:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5vh 5vw;
+    padding-top: unset;
+    height: unset;
+    width: unset;
+    position: unset;
+    z-index: unset;
+    top: unset;
+    left: unset;
+    background-color: unset;
+    overflow-x: unset;
+    transition: unset;
+    text-align: unset;
+  }
+
+  #meðferð,
+  #meðferðHjáMér,
+  #fjarmeðferð,
+  #sjálfsvinna,
+  #fræðsla,
+  #umMig {
+    width: auto;
+    margin: 2vh 2vw;
+    text-align: center;
+  }
+
+  #tilBaka {
+    display: none;
+  }
+
+  .fld {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    width: 5vw;
+    margin: 2vh 2vw;
+    border: none;
+    display: inline;
+    padding-top: unset;
+    height: unset;
+    position: unset;
+    z-index: unset;
+    top: unset;
+    left: unset;
+    background-color: unset;
+    overflow-x: unset;
+    transition: unset;
+    text-align: unset;
   }
 }
