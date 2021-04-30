@@ -17,9 +17,9 @@ body {
 
 header {
   background-image: url("/Pictures/hestadraumur_banner_mobile.jpg");
-  height: 60vh;
+  height: 80vh;
   box-shadow: 0 2px 5px #888888;
-  margin-top: 20vh;
+  margin-top: 10vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -40,6 +40,7 @@ header {
   align-items: center;
   justify-content: center;
   margin: 0;
+  padding-top: 20vh;
   padding-bottom: 2vh;
   font-style: bold;
 }
@@ -132,6 +133,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 3vh 1vw;
+    padding-top: 0;
   }
 
   .btn {
@@ -221,6 +223,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 3vh 1vw;
+    padding-top: 0;
   }
 
   .btn {
