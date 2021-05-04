@@ -201,8 +201,6 @@ nav {
 }
 
 .text {
-  border-radius: 25px;
-  background-color: rgb(233, 233, 233);
   width: 100%;
   padding: 1vh 4vw;
 }
@@ -218,6 +216,11 @@ section article {
   box-shadow: 1px 1px 3px #272c2d;
   width: 100%;
   position: initial;
+}
+
+summary {
+  cursor: pointer;
+  padding: 1vh 2vw;
 }
 
 .meiri {

@@ -87,13 +87,13 @@ header {
 #fræðsla,
 #umMig {
   width: 80vw;
-  margin: 1vh 10vw;
+  margin: 0vh 10vw;
 }
 
 #tilBaka {
   position: absolute;
-  top: 3vh;
-  left: 5vw;
+  top: 5vh;
+  left: 3vw;
 }
 
 #tilBaka a {
@@ -101,6 +101,26 @@ header {
   color: #455063;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+#leftCross {
+  display: block;
+  width: 33px;
+  height: 4px;
+  position: relative;
+  border-radius: 3px;
+  transform: rotate(-45deg) translate(0, -1px);
+  background: #455063;
+}
+
+#rightCross {
+  display: block;
+  width: 33px;
+  height: 4px;
+  position: relative;
+  border-radius: 3px;
+  transform: rotate(45deg) translate(2px, 2px);
+  background: #455063;
 }
 
 .fld {

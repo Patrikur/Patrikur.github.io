@@ -1,6 +1,6 @@
 function changeLangEng(){
     document.getElementById("meðferðLang").text = "Therapy";
-    document.getElementById("meðferðLang").setAttribute("href", "index_en_v2.html");
+    document.getElementById("meðferðLang").setAttribute("href", "index_en_v3.html");
     document.getElementById("meðferðHjáMérLang").text = "Therapy with Me";
     document.getElementById("meðferðHjáMérLang").setAttribute("href", "https://salmedferd.is/?page_id=229");
     document.getElementById("fjarmeðferðLang").text = "Online Therapy";
@@ -20,7 +20,7 @@ function changeLangEng(){
 
 function changeLangIsl(){
     document.getElementById("meðferðLang").text = "Meðferð";
-    document.getElementById("meðferðLang").setAttribute("href", "index_is_v2.html");
+    document.getElementById("meðferðLang").setAttribute("href", "index_is_v3.html");
     document.getElementById("meðferðHjáMérLang").text = "Meðferð hjá mér";
     document.getElementById("meðferðHjáMérLang").setAttribute("href", "https://salmedferd.is/?page_id=4");
     document.getElementById("fjarmeðferðLang").text = "Fjarmeðferð";
