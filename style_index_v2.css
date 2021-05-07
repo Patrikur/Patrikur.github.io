@@ -16,18 +16,22 @@ body {
 }
 
 header {
-  background-image: url("/Pictures/hestadraumur_banner_mobile.jpg");
-  height: 80vh;
-  box-shadow: 0 2px 5px #888888;
   margin-top: 10vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#headerPic {
+  margin: 0 2vw;
+  box-shadow: 0 2px 5px #888888;
+  height: 150px;
+  width: 96vw;
+  border-radius: 15px;
 }
 
 #logo {
   display: block;
   margin: 5vh auto;
-  padding: 10vh 0 0 0;
   width: 300px;
 }
 
@@ -40,7 +44,7 @@ header {
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding-top: 20vh;
+  padding-top: 2vh;
   padding-bottom: 2vh;
   font-style: bold;
 }
@@ -48,8 +52,8 @@ header {
 .btn {
   font-family: "Mulish", sans-serif;
   font-size: 1.5rem;
-  color: white;
-  border: 2px solid white;
+  color: #465886;
+  border: 2px solid #465886;
   border-radius: 15px;
   background: none;
   margin: 0 2vw 2vh 2vw;
@@ -140,11 +144,17 @@ header {
     background-size: cover;
   }
 
+  #headerPic {
+    display: none;
+  }
+
   #logo {
     display: block;
     margin: 0 auto;
     padding: 2vh 0;
     width: 350px;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 15px;
   }
 
   .menu {
@@ -160,7 +170,8 @@ header {
     font-size: 1.25rem;
     transition: 0.2s ease-in;
     width: 200px;
-    cursor: pointer;
+    color: white;
+    border: 2px solid white;
   }
 
   .active {
@@ -230,11 +241,17 @@ header {
     background-size: cover;
   }
 
+  #headerPic {
+    display: none;
+  }
+
   #logo {
     display: block;
     margin: 0 auto;
     padding: 2vh 0;
     width: 300px;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 15px;
   }
 
   .menu {
@@ -250,6 +267,8 @@ header {
     transition: 0.2s ease-in;
     width: 200px;
     cursor: pointer;
+    color: white;
+    border: 2px solid white;
   }
 
   #isl:hover,
