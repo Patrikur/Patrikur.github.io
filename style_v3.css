@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
   box-sizing: border-box;
@@ -10,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  text-align: justify;
+  text-align: left;
 }
 
 main h1 {
@@ -153,7 +154,7 @@ nav {
 }
 
 #menu li {
-  margin: 7vh 6vw 7vh 0;
+  margin: 5vh 6vw 5vh 0;
   font-size: 1.5rem;
 }
 
@@ -209,6 +210,7 @@ section article {
   color: #272c2d;
   text-decoration: none;
   margin-bottom: 3vh;
+  font-family: "Lato", sans-serif;
 }
 
 .picture {

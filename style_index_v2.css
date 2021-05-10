@@ -16,22 +16,23 @@ body {
 }
 
 header {
-  margin-top: 10vh;
+  margin-top: 20vh;
   width: 100vw;
   overflow: hidden;
 }
 
-#headerPic {
-  margin: 0 2vw;
+#logoBackground {
+  width: 100vw;
+  height: 30vh;
+  background-image: url("/Pictures/hestadraumur_banner_mobile2.jpg");
+  background-size: cover;
   box-shadow: 0 2px 5px #888888;
-  height: 150px;
-  width: 96vw;
-  border-radius: 15px;
 }
 
 #logo {
   display: block;
   margin: 5vh auto;
+  padding: 5vh 0;
   width: 300px;
 }
 
@@ -136,7 +137,7 @@ header {
 
 @media only screen and (min-width: 1090px) {
   header {
-    background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_1300.jpg");
+    background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_1300_2.jpg");
     box-shadow: 0 2px 5px #888888;
     height: 45vh;
     margin-top: 20vh;
@@ -144,8 +145,12 @@ header {
     background-size: cover;
   }
 
-  #headerPic {
-    display: none;
+  #logoBackground {
+    width: none;
+    height: none;
+    background-image: none;
+    background-size: none;
+    box-shadow: none;
   }
 
   #logo {
@@ -153,8 +158,6 @@ header {
     margin: 0 auto;
     padding: 2vh 0;
     width: 350px;
-    background-color: rgb(255, 255, 255, 0.2);
-    border-radius: 15px;
   }
 
   .menu {
@@ -233,16 +236,20 @@ header {
 
 @media only screen and (max-width: 1089.9px) and (min-width: 501px) {
   header {
-    background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_1300.jpg");
+    background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_1300_2.jpg");
     box-shadow: 0 2px 5px #888888;
-    height: 45vh;
-    margin-top: 20vh;
+    height: 40vh;
+    margin-top: 5vh;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  #headerPic {
-    display: none;
+  #logoBackground {
+    width: none;
+    height: none;
+    background-image: none;
+    background-size: none;
+    box-shadow: none;
   }
 
   #logo {
@@ -250,8 +257,6 @@ header {
     margin: 0 auto;
     padding: 2vh 0;
     width: 300px;
-    background-color: rgb(255, 255, 255, 0.2);
-    border-radius: 15px;
   }
 
   .menu {
@@ -259,7 +264,7 @@ header {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 3vh 1vw;
+    margin: 1vh 1vw;
     padding-top: 0;
   }
 
@@ -279,9 +284,9 @@ header {
 
   .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: row nowrap;
     justify-content: space-between;
-    margin: 5vh 5vw;
+    margin: 2vh 3vw;
     padding-top: unset;
     height: unset;
     width: unset;
@@ -302,7 +307,7 @@ header {
   #fræðsla,
   #umMig {
     width: auto;
-    margin: 2vh 2vw;
+    margin: 2vh 0;
     text-align: center;
   }
 
@@ -313,8 +318,8 @@ header {
   .fld {
     font-size: 1.5rem;
     font-weight: lighter;
-    width: 5vw;
-    margin: 2vh 2vw;
+    width: 1vw;
+    margin: 0vh 2vw;
     border: none;
     display: inline;
     padding-top: unset;
