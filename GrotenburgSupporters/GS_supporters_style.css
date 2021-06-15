@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212550;
+  background-color: #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+  color: white;
+  border-bottom: 4px solid #e30613;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 150px;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #212550;
+  width: 100vw;
+  height: 140px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.topbar img {
+  height: 130px;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.75rem;
+  font-style: inherit;
+  padding: 20px;
+  margin: 0;
+}
+
+.head {
+  position: absolute;
+}
+
+main {
+  padding-top: 160px;
+  padding-bottom: 50px;
+}
+
+.main-container {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.supporter {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: 0;
+}
+
+.supporter img {
+  width: 100%;
+}
+
+.blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212550;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 10px;
+  bottom: 0;
+}
+
+.red {
+  color: #e30613;
+  margin: 0.15rem 0;
+}
+
+.report footer {
+  height: 20px;
+  bottom: 0;
+  border-top: 2px solid white;
+}
+
+footer {
+  background-color: white;
+  color: white;
+  height: 80px;
+  width: 100vw;
+  border-top: 4px solid #e30613;
+  bottom: 0;
+}
+
+.empty-container {
+  height: 5px;
+}
+
+.blue-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212550;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 75px;
+  text-decoration: none;
+}
+
+.blue-footer a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.blue-footer a span {
+  padding: 5px;
+}
+
+.fab {
+  color: white;
+}
