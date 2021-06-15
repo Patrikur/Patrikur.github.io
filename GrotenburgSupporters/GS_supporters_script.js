@@ -5,7 +5,7 @@ const main = document.querySelector('.main-container');
 sponsors.forEach(sponsor => {
     main.innerHTML += `
     <div class="supporter">
-      <img src="/Logos/${sponsor}" alt="" />
+      <img src="/GrotenburgSupporters/Logos/${sponsor}" alt="" />
     </div>
     `
 })
