@@ -97,7 +97,7 @@ const getProduct = async (idx) => {
           ${data[idx].title}
           </h2>
           <h3 class="price" id="price">
-          ${(data[idx].price)*100}$ <a href="/shipping.html">+ shipping</a>
+          ${(data[idx].price)*100}$ <a href="/eNay/shipping.html">+ shipping</a>
           </h3>
 
           <hr class="line-breaks" />
