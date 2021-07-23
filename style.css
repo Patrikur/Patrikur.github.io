@@ -400,6 +400,7 @@ main {
 footer {
   background-color: var(--bg-color);
   height: 230px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
