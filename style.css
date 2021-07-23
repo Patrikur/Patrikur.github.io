@@ -25,7 +25,7 @@ header {
   background-color: var(--bg-color);
   color: white;
   height: 50px;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   opacity: 0;
   transition: opacity 0.3s ease, height 0.3s ease;
@@ -130,6 +130,7 @@ main {
 .project-section,
 .foot-section {
   margin: 10px 0;
+  width: 100%;
 }
 
 .section-title {
