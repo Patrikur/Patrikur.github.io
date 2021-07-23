@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column;
+  background-color: rgb(230, 230, 230);
+  transition: height 0.1s ease-in-out;
+  z-index: 1;
+}
+
+.topsection {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row;
+  padding: 0 5px;
+  width: 100%;
+  height: auto;
+}
+
+.menuBtn {
+  display: none;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuBtn.show {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.search {
+  display: none;
+}
+
+.fa-bars,
+.fa-times {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.searchMobile {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+}
+
+.searchbar {
+  width: 98vw;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.25rem;
+  padding: 5px;
+}
+
+::placeholder {
+  font-family: "Comfortaa", sans-serif;
+}
+
+.fa-search {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.75rem;
+  cursor: pointer;
+}
+
+.fa-search:hover,
+.fa-shopping-cart:hover {
+  color: rgba(119, 119, 119, 0.5);
+}
+
+.menu {
+  display: none;
+}
+
+.menuMobile {
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-family: inherit;
+}
+
+ul li a:hover,
+.active {
+  text-decoration: underline;
+}
+
+.shopping-cart {
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+}
+
+#items {
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 15px;
+  right: 10px;
+  color: rgb(119, 119, 119);
+  background-color: white;
+  font-size: 0.75rem;
+  height: 1rem;
+  width: 1rem;
+  font-family: "Comfortaa", sans-serif;
+  border-radius: 50%;
+}
+
+.fas,
+.fab {
+  color: rgb(119, 119, 119);
+}
+
+main {
+  padding-top: 140px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-flow: column;
+}
+
+.main-container {
+  width: 95vw;
+  min-height: 80vh;
+  border-radius: 10px;
+}
+
+.main-container h1 {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.main-container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.section {
+  border: 5px solid white;
+  border-radius: 10px;
+  margin: 5px;
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+}
+
+.section h2 {
+  padding-top: 10px;
+}
+
+.name,
+.address,
+.extra-data,
+.digital,
+.payment-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.field {
+  position: relative;
+  z-index: 0;
+  padding: 10px;
+}
+
+.input {
+  background-color: transparent;
+  border: 0;
+  display: block;
+  padding: 5px 15px;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.label {
+  position: absolute;
+  display: inline-block;
+  top: 15px;
+  left: 15px;
+  transition: 10s ease-in-out;
+}
+
+.input:focus + label {
+  transform: translateY(-20px);
+}
+
+.data {
+  margin: 10px;
+}
+
+.data select,
+.blood select,
+.organ select {
+  background-color: white;
+  border-radius: 5px;
+  font-family: inherit;
+  border: none;
+  padding: 5px;
+}
+
+.data input,
+.card input {
+  border-radius: 5px;
+  font-family: inherit;
+  border: none;
+  padding: 5px;
+}
+
+.payment-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.payment {
+  padding: 5px;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  margin: 10px;
+}
+
+.method-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+}
+
+.card,
+.online,
+.bitcoin,
+.blood,
+.organ {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px 0;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.footer-container {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(230, 230, 230);
+  height: 55vh;
+  bottom: 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.contacts {
+  padding: 3px;
+}
+
+.contacts.top {
+  font-weight: bold;
+}
+
+.contacts span {
+  font-family: "Comfortaa", sans-serif;
+  color: black;
+  margin: 5px;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 5px;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.payments {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .overview {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .footer-container {
+    flex-flow: row;
+    height: 25vh;
+  }
+
+  .header {
+    height: 70px;
+    justify-content: center;
+  }
+
+  .topsection {
+    justify-content: space-evenly;
+    padding: 10px 20px 10px;
+  }
+
+  .section {
+    width: 70%;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .search {
+    display: inline-block;
+    position: relative;
+  }
+
+  .searchMobile {
+    display: none;
+  }
+
+  .searchbar {
+    width: 500px;
+    height: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.25rem;
+    padding: 20px;
+  }
+
+  ::placeholder {
+    font-family: "Comfortaa", sans-serif;
+  }
+
+  .fa-search {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.75rem;
+    cursor: pointer;
+  }
+
+  .fa-search:hover,
+  .fa-shopping-cart:hover {
+    color: rgba(119, 119, 119, 0.5);
+  }
+
+  .menu {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row;
+    height: 1.75rem;
+    width: auto;
+    list-style-type: none;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    padding: 1vh 1vw;
+    font-family: inherit;
+  }
+
+  ul li a:hover,
+  .active {
+    text-decoration: underline;
+  }
+
+  .shopping-cart {
+    padding: 20px;
+    position: relative;
+  }
+
+  main {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+
+  .main-container {
+    width: 80vw;
+  }
+
+  #items {
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 15px;
+    right: 10px;
+    color: rgb(119, 119, 119);
+    background-color: white;
+    font-size: 0.75rem;
+    height: 1rem;
+    width: 1rem;
+    font-family: "Comfortaa", sans-serif;
+    border-radius: 50%;
+  }
+
+  .method {
+    flex-flow: row;
+  }
+}

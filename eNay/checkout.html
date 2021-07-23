@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/98d9508a9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="checkout_style.css" />
+    <title>eNay | Checkout</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="topsection">
+        <div class="mobileMenu" id="mobileMenu">
+          <i class="fas fa-2x fa-bars menuBtn show"></i>
+          <i class="fas fa-2x fa-times menuBtn"></i>
+        </div>
+        <a href="/index.html"
+          ><img src="/eNayLogo.png" alt="logo" class="logo"
+        /></a>
+        <ul class="menu">
+          <li><a href="/women.html">Women</a></li>
+          <li><a href="/men.html">Men</a></li>
+          <li>
+            <a href="/jewelry.html">Jewelery</a>
+          </li>
+          <li>
+            <a href="/electronics.html">Electronics</a>
+          </li>
+          <li><a href="/sale.html">Sale</a></li>
+        </ul>
+        <div class="search">
+          <input
+            class="searchbar"
+            type="text"
+            placeholder="Good luck finding anything!"
+          />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="shopping-cart">
+          <a href="/cart.html"><i class="fas fa-shopping-cart fa-2x"></i></a
+          ><span id="items"></span>
+        </div>
+      </div>
+      <ul class="menuMobile">
+        <li><a href="/women.html">Women</a></li>
+        <li><a href="/men.html">Men</a></li>
+        <li>
+          <a href="/jewelry.html">Jewelery</a>
+        </li>
+        <li>
+          <a href="/electronics.html">Electronics</a>
+        </li>
+        <li><a href="/sale.html">Sale</a></li>
+      </ul>
+      <div class="searchMobile">
+        <input
+          class="searchbar"
+          type="text"
+          placeholder="Good luck finding anything!"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+    </header>
+    <main>
+      <h1>Checkout</h1>
+      <div class="main-container">
+        <form>
+          <div class="section">
+            <h2>Name</h2>
+            <div class="name">
+              <div class="field">
+                <input
+                  class="input"
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  required
+                />
+                <label class="label" for="firstname">First Name</label>
+              </div>
+              <div class="field">
+                <input
+                  class="input"
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  required
+                />
+                <label class="label" for="lastname">Last Name</label>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <h2>Address</h2>
+            <div class="address">
+              <div class="field">
+                <input
+                  class="input"
+                  type="text"
+                  id="street"
+                  name="street"
+                  required
+                />
+                <label class="label" for="street">Street</label>
+              </div>
+              <div class="field">
+                <input
+                  class="input"
+                  type="text"
+                  id="number"
+                  name="number"
+                  required
+                />
+                <label class="label" for="number">Number</label>
+              </div>
+              <div class="field">
+                <input
+                  class="input"
+                  type="text"
+                  id="city"
+                  name="city"
+                  required
+                />
+                <label class="label" for="city">City</label>
+              </div>
+              <div class="field">
+                <input
+                  class="input"
+                  type="text"
+                  id="postcode"
+                  name="postcode"
+                  required
+                />
+                <label class="label" for="postcode">Postcode</label>
+              </div>
+              <div class="field">
+                <input
+                  class="input"
+                  type="text"
+                  id="country"
+                  name="country"
+                  required
+                />
+                <label class="label" for="country">Country</label>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <h2>Important Information</h2>
+            <div class="extra-data">
+              <div class="data">
+                <label for="date">Birthday</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="data">
+                <label for="time">Birthtime</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+              <div class="data">
+                <label for="relationship">Relationship Status</label>
+                <select name="relationship" id="relationship">
+                  <option value="single">Single</option>
+                  <option value="married">Married</option>
+                  <option value="dating">Dating</option>
+                  <option value="someone">Seeing someone</option>
+                  <option value="complicated">Complicated</option>
+                  <option value="divorced">Divorced</option>
+                  <option value="polygamic">Polygamic</option>
+                  <option value="tinder">In The Tinder Game</option>
+                </select>
+              </div>
+              <div class="data">
+                <label for="relationship">Gender</label>
+                <select name="gender" id="gender">
+                  <option value="androgyne">Androgyne</option>
+                  <option value="bigender">Bigender</option>
+                  <option value="butch">Butch</option>
+                  <option value="female">Cis Female</option>
+                  <option value="male">Cis Male</option>
+                  <option value="genderfluid">Genderfluid</option>
+                  <option value="genderoutlaw">Gender outlaw</option>
+                  <option value="genderqueen">Genderqueer</option>
+                  <option value="masculine">Masculine of center</option>
+                  <option value="nonbinary">Nonbinary</option>
+                  <option value="omnigender">Omnigender</option>
+                  <option value="polygender">Polygender</option>
+                  <option value="transgender">Transgender</option>
+                  <option value="trans">Trans</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <h2>Contact</h2>
+            <div class="digital">
+              <div class="field">
+                <input
+                  class="input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <label class="label" for="email">Email</label>
+              </div>
+              <div class="field">
+                <input
+                  class="input"
+                  type="email"
+                  id="confirmemail"
+                  name="confirmemail"
+                  required
+                />
+                <label class="label" for="confirmemail">Confirm email</label>
+              </div>
+              <div class="field">
+                <input class="input" type="tel" id="tel" name="tel" required />
+                <label class="label" for="tel">Telephone</label>
+              </div>
+              <div class="field">
+                <input class="input" type="tel" id="fax" name="fax" required />
+                <label class="label" for="fax">Fax</label>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <h2>Payment</h2>
+            <div class="payment-container">
+              <div class="method">
+                <div class="payment">
+                  <input
+                    type="radio"
+                    id="mastercard"
+                    name="paymentmethod"
+                    value="Mastercard"
+                    onclick="showCard();"
+                  />
+                  <label for="mastercard">Mastercard</label>
+                </div>
+                <div class="payment">
+                  <input
+                    type="radio"
+                    id="visa"
+                    name="paymentmethod"
+                    value="Visa"
+                    onclick="showCard();"
+                  />
+                  <label for="visa">Visa</label>
+                </div>
+                <div class="payment">
+                  <input
+                    type="radio"
+                    id="stripe"
+                    name="paymentmethod"
+                    value="Stripe"
+                    onclick="showCard();"
+                  />
+                  <label for="stripe">Stripe</label>
+                </div>
+                <div class="payment">
+                  <input
+                    type="radio"
+                    id="paypal"
+                    name="paymentmethod"
+                    value="PayPal"
+                    onclick="showOnline();"
+                  />
+                  <label for="paypal">PayPal</label>
+                </div>
+                <div class="payment">
+                  <input
+                    type="radio"
+                    id="amazonpay"
+                    name="paymentmethod"
+                    value="AmazonPay"
+                    onclick="showOnline();"
+                  />
+                  <label for="amazonpay">AmazonPay</label>
+                </div>
+                <div class="payment">
+                  <input
+                    type="radio"
+                    id="bitcoin"
+                    name="paymentmethod"
+                    value="Bitcoin"
+                    onclick="showBitcoin();"
+                  />
+                  <label for="bitcoin">Bitcoin</label>
+                </div>
+                <div class="payment">
+                  <input
+                    type="radio"
+                    id="blood"
+                    name="paymentmethod"
+                    value="Blood"
+                    onclick="showBlood();"
+                  />
+                  <label for="blood">Blood</label>
+                </div>
+                <div class="payment">
+                  <input
+                    type="radio"
+                    id="organ"
+                    name="paymentmethod"
+                    value="Organ"
+                    onclick="showOrgan();"
+                  />
+                  <label for="organ">Organ</label>
+                </div>
+              </div>
+              <div class="method-data">
+                <div class="card">
+                  <div class="field">
+                    <input
+                      class="input"
+                      type="text"
+                      id="cardholder"
+                      name="cardholder"
+                      required
+                    />
+                    <label class="label" for="cardholder"
+                      >Cardholder name</label
+                    >
+                  </div>
+                  <div class="field">
+                    <input
+                      class="input"
+                      type="text"
+                      id="cardnumber"
+                      name="cardnumber"
+                      required
+                    />
+                    <label class="label" for="cardnumber">Card number</label>
+                  </div>
+                  <label for="expiration">Expiration date</label>
+                  <input
+                    type="date"
+                    id="expiration"
+                    name="expiration"
+                    required
+                  />
+                  <div class="field">
+                    <input
+                      class="input"
+                      type="text"
+                      id="securitycode"
+                      name="securitycode"
+                      required
+                    />
+                    <label class="label" for="securitycode"
+                      >Security code</label
+                    >
+                  </div>
+                </div>
+                <div class="online">
+                  <div class="field">
+                    <input
+                      class="input"
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                    <label class="label" for="email">E-Mail</label>
+                  </div>
+                </div>
+                <div class="bitcoin">
+                  <div class="field">
+                    <input
+                      class="input"
+                      type="text"
+                      id="wallet"
+                      name="wallet"
+                      required
+                    />
+                    <label class="label" for="wallet">Walletnumber</label>
+                  </div>
+                </div>
+                <div class="blood">
+                  <label for="blood">Blood type</label>
+                  <select name="bloodtype" id="bloodtype">
+                    <option value="a+">A+</option>
+                    <option value="a-">A-</option>
+                    <option value="b+">B+</option>
+                    <option value="b-">B-</option>
+                    <option value="0+">0+</option>
+                    <option value="0-">0-</option>
+                    <option value="ab+">AB+</option>
+                    <option value="ab-">AB-</option>
+                  </select>
+                </div>
+                <div class="organ show">
+                  <label for="organtype">Choose Organ</label>
+                  <select name="organtype" id="organtype">
+                    <option value="heart">Heart</option>
+                    <option value="lungs">Lungs</option>
+                    <option value="liver">Liver</option>
+                    <option value="kidney">Kidney</option>
+                    <option value="bowel">Bowel</option>
+                    <option value="pancreas">Pancreas</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="place-order">
+              <a href="end.html"><button class="button">Place order</button></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="about">
+          <p>
+            © eNay Lazy Corp. Inc.
+            <br />
+            87 Zona Libre de Colon
+            <br />
+            6445 Panamá
+            <br />
+            Tax Id. 235892384
+          </p>
+        </div>
+        <div class="contact">
+          <span class="contacts top">Never Contact Us</span>
+          <a class="contacts" href="mailto: trashbin@enay.com"
+            ><i class="fas fa-at"><span>Don´t write us</span></i></a
+          >
+          <a class="contacts" href="tel:555 - nose"
+            ><i class="fas fa-phone-alt"><span>Don´t call us</span></i></a
+          >
+        </div>
+        <div class="payment-options">
+          <span class="contacts top">Payment Options</span>
+          <div class="payments">
+            <i class="fab fa-cc-visa fa-2x"></i>
+            <i class="fab fa-cc-stripe fa-2x"></i>
+            <i class="fab fa-cc-paypal fa-2x"></i>
+            <i class="fab fa-cc-mastercard fa-2x"></i>
+            <i class="fab fa-cc-amazon-pay fa-2x"></i>
+            <i class="fab fa-bitcoin fa-2x"></i>
+            <i class="fas fa-tint fa-2x"></i>
+            <i class="fas fa-lungs fa-2x"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="checkout_script.js"></script>
+  </body>
+</html>

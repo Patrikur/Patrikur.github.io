@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column;
+  background-color: rgb(230, 230, 230);
+  transition: height 0.1s ease-in-out;
+}
+
+.topsection {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row;
+  padding: 0 5px;
+  width: 100%;
+  height: auto;
+}
+
+.menuBtn {
+  display: none;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuBtn.show {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.search {
+  display: none;
+}
+
+.fa-bars,
+.fa-times {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.searchMobile {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+}
+
+.searchbar {
+  width: 98vw;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.25rem;
+  padding: 5px;
+}
+
+::placeholder {
+  font-family: "Comfortaa", sans-serif;
+}
+
+.fa-search {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.75rem;
+  cursor: pointer;
+}
+
+.fa-search:hover,
+.fa-shopping-cart:hover {
+  color: rgba(119, 119, 119, 0.5);
+}
+
+.menu {
+  display: none;
+}
+
+.menuMobile {
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-family: inherit;
+}
+
+ul li a:hover,
+.active {
+  text-decoration: underline;
+}
+
+.shopping-cart {
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+}
+
+#items {
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 15px;
+  right: 10px;
+  color: rgb(119, 119, 119);
+  background-color: white;
+  font-size: 0.75rem;
+  height: 1rem;
+  width: 1rem;
+  font-family: "Comfortaa", sans-serif;
+  border-radius: 50%;
+}
+
+.fas,
+.fab {
+  color: rgb(119, 119, 119);
+}
+
+main {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.main-container {
+  width: 95vw;
+}
+
+.main-container h1 {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.products-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.product a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  height: 400px;
+}
+
+.products-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.product img {
+  height: 250px;
+  width: 200px;
+  padding: 10px;
+}
+
+.product strong {
+  text-align: center;
+}
+
+.product span {
+  padding: 15px 15px 5px 15px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.old {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+.product:hover {
+  border: 1px solid rgb(119, 119, 119);
+  cursor: pointer;
+  padding: 19px;
+  border-radius: 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(230, 230, 230);
+  height: 55vh;
+  bottom: 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.contacts {
+  padding: 3px;
+}
+
+.contacts.top {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.contacts span {
+  font-family: "Comfortaa", sans-serif;
+  color: black;
+  margin: 5px;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 5px;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.payment-container {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .overview {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .footer-container {
+    flex-flow: row;
+    height: 25vh;
+  }
+
+  .header {
+    height: 70px;
+    justify-content: center;
+  }
+
+  .topsection {
+    justify-content: space-evenly;
+    padding: 10px 20px 10px;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .search {
+    display: inline-block;
+    position: relative;
+  }
+
+  .searchMobile {
+    display: none;
+  }
+
+  .searchbar {
+    width: 500px;
+    height: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.25rem;
+    padding: 20px;
+  }
+
+  ::placeholder {
+    font-family: "Comfortaa", sans-serif;
+  }
+
+  .fa-search {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.75rem;
+    cursor: pointer;
+  }
+
+  .fa-search:hover,
+  .fa-shopping-cart:hover {
+    color: rgba(119, 119, 119, 0.5);
+  }
+
+  .menu {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row;
+    height: 1.75rem;
+    width: auto;
+    list-style-type: none;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    padding: 1vh 1vw;
+    font-family: inherit;
+  }
+
+  ul li a:hover,
+  .active {
+    text-decoration: underline;
+  }
+
+  .shopping-cart {
+    padding: 20px;
+    position: relative;
+  }
+
+  main {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+
+  .main-container {
+    flex-flow: row;
+    width: 80vw;
+  }
+
+  .image-container {
+    width: 50%;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  #items {
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 15px;
+    right: 10px;
+    color: rgb(119, 119, 119);
+    background-color: white;
+    font-size: 0.75rem;
+    height: 1rem;
+    width: 1rem;
+    font-family: "Comfortaa", sans-serif;
+    border-radius: 50%;
+  }
+}
