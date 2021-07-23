@@ -174,7 +174,7 @@ nav {
 }
 
 #title {
-  background-image: url("/Pictures/hestadraumur_banner_500.jpg");
+  background-image: url("/Hildur/Pictures/hestadraumur_banner_500.jpg");
   text-align: center;
   color: white;
   text-shadow: 1px 1px 2px #455063;
@@ -339,7 +339,7 @@ footer h3 {
   }
 
   #title {
-    background-image: url("/Pictures/hestadraumur_banner_opacity_1000.jpg");
+    background-image: url("/Hildur/Pictures/hestadraumur_banner_opacity_1000.jpg");
     font-size: 3.5rem;
     height: 30vh;
   }
@@ -400,7 +400,7 @@ footer h3 {
   }
 
   #title {
-    background-image: url("/Pictures/hestadraumur_banner_opacity_1000.jpg");
+    background-image: url("/Hildur/Pictures/hestadraumur_banner_opacity_1000.jpg");
     height: 15vh;
     font-size: 3rem;
     margin: 10vh 0 0 0;
@@ -454,7 +454,7 @@ footer h3 {
   }
 
   #title {
-    background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_800.jpg");
+    background-image: url("/Hildur/Pictures/cropped-hestadraumur_banner_opacity_800.jpg");
     background-position: center;
     height: 20vh;
     font-size: 3rem;

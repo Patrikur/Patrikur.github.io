@@ -24,7 +24,7 @@ header {
 #logoBackground {
   width: 100vw;
   height: 30vh;
-  background-image: url("/Pictures/hestadraumur_banner_mobile2.jpg");
+  background-image: url("/Hildur/Pictures/hestadraumur_banner_mobile2.jpg");
   background-size: cover;
   box-shadow: 0 2px 5px #888888;
 }
@@ -137,7 +137,7 @@ header {
 
 @media only screen and (min-width: 1090px) {
   header {
-    background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_1300_2.jpg");
+    background-image: url("/Hildur/Pictures/cropped-hestadraumur_banner_opacity_1300_2.jpg");
     box-shadow: 0 2px 5px #888888;
     height: 45vh;
     margin-top: 20vh;
@@ -236,7 +236,7 @@ header {
 
 @media only screen and (max-width: 1089.9px) and (min-width: 501px) {
   header {
-    background-image: url("/Pictures/cropped-hestadraumur_banner_opacity_1300_2.jpg");
+    background-image: url("/Hildur/Pictures/cropped-hestadraumur_banner_opacity_1300_2.jpg");
     box-shadow: 0 2px 5px #888888;
     height: 40vh;
     margin-top: 5vh;
