@@ -105,40 +105,40 @@ const getProduct = async (idx_array) => {
 
     if(window.outerWidth < 768){
         imgs.innerHTML = `
-        <a href='/product/${data[idx_array[0]].id}.html'><div class="product">
+        <a href='/eNay/product/${data[idx_array[0]].id}.html'><div class="product">
             <img src="${data[idx_array[0]].image}"/>
             <strong>${data[idx_array[0]].title}</strong>
             <span>${(data[idx_array[0]].price)*100}$</span>
         </div></a>`  
     } else if (window.outerWidth > 768 && window.outerWidth < 1200) {
         imgs.innerHTML = `
-        <a href='/product/${data[idx_array[0]].id}.html'><div class="product">
+        <a href='/eNay/product/${data[idx_array[0]].id}.html'><div class="product">
             <img src="${data[idx_array[0]].image}"/>
             <strong>${data([idx_array[0]].price)*100}$</span>
         </div></a>
-        <a href='/product/${data[idx_array[1]].id}.html'><div class="product">
+        <a href='/eNay/product/${data[idx_array[1]].id}.html'><div class="product">
             <img src="${data[idx_array[1]].image}"/>
             <strong>${data[idx_array[1]].title}</strong>
             <span>${(data[idx_array[1]].price)*100}$</span>
         </div></a>`
     } else {
         imgs.innerHTML = `
-        <a href='/product/${data[idx_array[0]].id}.html'><div class="product">
+        <a href='/eNay/product/${data[idx_array[0]].id}.html'><div class="product">
             <img src="${data[idx_array[0]].image}"/>
             <strong>${data[idx_array[0]].title}</strong>
             <span>${(data[idx_array[0]].price)*100}$</span>
         </div></a>
-        <a href='/product/${data[idx_array[1]].id}.html'><div class="product">
+        <a href='/eNay/product/${data[idx_array[1]].id}.html'><div class="product">
             <img src="${data[idx_array[1]].image}"/>
             <strong>${data[idx_array[1]].title}</strong>
             <span>${(data[idx_array[1]].price)*100}$</span>
         </div></a>
-        <a href='/product/${data[idx_array[2]].id}.html'><div class="product">
+        <a href='/eNay/product/${data[idx_array[2]].id}.html'><div class="product">
             <img src="${data[idx_array[2]].image}"/>
             <strong>${data[idx_array[2]].title}</strong>
             <span>${(data[idx_array[2]].price)*100}$</span>
         </div></a>
-        <a href='/product/${data[idx_array[3]].id}.html'><div class="product">
+        <a href='/eNay/product/${data[idx_array[3]].id}.html'><div class="product">
             <img src="${data[idx_array[3]].image}"/>
             <strong>${data[idx_array[3]].title}</strong>
             <span>${(data[idx_array[3]].price)*100}$</span>

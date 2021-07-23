@@ -89,7 +89,7 @@ const getCart = async () => {
           products.innerHTML += `
             <div class="product">
                   <div class="left">
-                      <a href='/product/${data[idx].id}.html'><img src="${data[idx].image}"/></a>
+                      <a href='/eNay/product/${data[idx].id}.html'><img src="${data[idx].image}"/></a>
                       <strong>${data[idx].title}</strong>
                   </div>    
                   <div class="right">
