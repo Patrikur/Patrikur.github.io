@@ -275,7 +275,7 @@ main {
   padding: 10px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 780px) and (max-width: 1400px) {
   .overview {
     display: flex;
     flex-flow: row;
@@ -285,7 +285,7 @@ main {
 
   .footer-container {
     flex-flow: row;
-    height: 25vh;
+    height: 140px;
   }
 
   .header {
@@ -386,20 +386,117 @@ main {
   .description {
     width: 100%;
   }
+}
 
-  #items {
-    display: none;
-    position: absolute;
+@media only screen and (min-width: 1401px) {
+  .overview {
+    display: flex;
+    flex-flow: row;
     align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .footer-container {
+    flex-flow: row;
+    height: 140px;
+  }
+
+  .header {
+    height: 70px;
     justify-content: center;
-    top: 15px;
-    right: 10px;
-    color: rgb(119, 119, 119);
-    background-color: white;
-    font-size: 0.75rem;
-    height: 1rem;
-    width: 1rem;
+  }
+
+  .topsection {
+    justify-content: space-evenly;
+    padding: 10px 20px 10px;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .search {
+    display: inline-block;
+    position: relative;
+  }
+
+  .searchMobile {
+    display: none;
+  }
+
+  .searchbar {
+    width: 500px;
+    height: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.25rem;
+    padding: 20px;
+  }
+
+  ::placeholder {
     font-family: "Comfortaa", sans-serif;
-    border-radius: 50%;
+  }
+
+  .fa-search {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.75rem;
+    cursor: pointer;
+  }
+
+  .fa-search:hover,
+  .fa-shopping-cart:hover {
+    color: rgba(119, 119, 119, 0.5);
+  }
+
+  .menu {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row;
+    height: 1.75rem;
+    width: auto;
+    list-style-type: none;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    padding: 1vh 1vw;
+    font-family: inherit;
+  }
+
+  ul li a:hover,
+  .active {
+    text-decoration: underline;
+  }
+
+  .shopping-cart {
+    padding: 20px;
+    position: relative;
+  }
+
+  main {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+
+  .main-container {
+    flex-flow: row;
+    width: 80vw;
+  }
+
+  .image-container {
+    width: 50%;
+  }
+
+  .description {
+    width: 100%;
   }
 }

@@ -430,7 +430,7 @@ footer {
   color: white;
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 780px) and (max-width: 1400px) {
   .nav li a {
     font-size: 1.5rem;
     margin: 10px;
@@ -480,7 +480,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1401px) {
   .nav li a {
     font-size: 1.5rem;
     margin: 10px 20px;
