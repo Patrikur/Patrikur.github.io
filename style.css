@@ -486,8 +486,35 @@ footer {
     margin: 10px 20px;
   }
 
+  .section-container {
+    width: 80vw;
+  }
+
+  .development,
+  .program,
+  .languages {
+    width: 100%;
+  }
+
+  .skill {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .skills {
+    flex-direction: row;
+  }
+
   .project {
     width: 500px;
+  }
+
+  .gif-container {
+    flex-direction: row;
+  }
+
+  .section-container {
+    padding: 10px;
   }
 
   .gif {
@@ -498,5 +525,13 @@ footer {
 
   .contact li {
     font-size: 1.25rem;
+  }
+
+  footer {
+    height: 100px;
+  }
+
+  .contact {
+    flex-flow: row;
   }
 }
