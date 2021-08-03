@@ -12,6 +12,7 @@ const catWomen = document.querySelectorAll('.catWomen');
 const catJewelry = document.querySelectorAll('.catJewelry');
 const catElectronics = document.querySelectorAll('.catElectronics');
 const catSale = document.querySelectorAll('.catSale');
+const loader = document.getElementById('loader');
 const items = document.getElementById('items');
 const messages = ['You are not an easy customer...', 'Just stop it!', 'Seriously?', 'Please, stop!', 'Get some help!', 'Initiate self-destruction...', 'Watch out behind you!', 'Search function disabled'];
 const popUps = ['Local restrictions do not allow that many pixels in such a small place.', 'Are you sure you want to see that many details?','Error code 3:16. Stone Cold stunned the viewport.', 'Puh...I am out of creative answers. Do you have one?','Welcome to Jurassic Park!'];
@@ -80,6 +81,10 @@ const getProduct = async (idx) => {
     const res = await fetch(url);
     const data = await res.json();
     const arrayLength = data.length;
+
+    if(data.length != 0){
+      loader.style.display = "none";
+    }  
     
     title.innerHTML = `
     eNay | ${data[idx].title}

@@ -5,6 +5,7 @@ const menuMobile = document.querySelector('.menuMobile');
 const closeMenu = document.querySelector('.fa-times');
 const searchbar = document.querySelectorAll('.searchbar');
 const searchBtn = document.querySelectorAll('.fa-search');
+const loader = document.getElementById('loader');
 const items = document.getElementById('items');
 const imgs = document.getElementById('carousel-images');
 const leftBtn = document.querySelector('.fa-angle-left');
@@ -102,6 +103,9 @@ const getProduct = async (idx_array) => {
     const data = await res.json();
     const arrayLength = data.length;
     
+    if(data.length != 0){
+        loader.style.display = "none";
+    }
 
     if(window.outerWidth < 768){
         imgs.innerHTML = `

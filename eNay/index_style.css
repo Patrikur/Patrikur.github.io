@@ -158,6 +158,29 @@ main {
   flex-flow: column;
 }
 
+.loader {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 10px solid rgb(230, 230, 230);
+  border-top: 10px solid rgb(119, 119, 119);
+  border-bottom: 10px solid rgb(119, 119, 119);
+  border-radius: 50%;
+  margin: 20px;
+  animation: load 2s linear infinite;
+  z-index: -1;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .carousel {
   padding: 20px;
   width: 100%;
@@ -198,7 +221,7 @@ main {
   padding: 20px;
   margin: 0;
   width: 275px;
-  height: 350px;
+  height: 375px;
 }
 
 .product img {

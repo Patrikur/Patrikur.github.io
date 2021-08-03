@@ -6,6 +6,7 @@ const menuMobile = document.querySelector('.menuMobile');
 const closeMenu = document.querySelector('.fa-times');
 const searchbar = document.querySelectorAll('.searchbar');
 const searchBtn = document.querySelectorAll('.fa-search');
+const loader = document.getElementById('loader');
 const products  = document.getElementById('products');
 const items = document.getElementById('items');
 const messages = ['You are not an easy customer...', 'Just stop it!', 'Seriously?', 'Please, stop!', 'Get some help!', 'Initiate self-destruction...', 'Watch out behind you!', 'Search function disabled'];
@@ -74,6 +75,10 @@ const getCart = async () => {
     const data = await res.json();
     const arrayLength = data.length;
     
+    if(data.length != 0){
+      loader.style.display = "none";
+    }
+
     let totalAmount = 0;
 
     if(shoppingCart.length === 0){

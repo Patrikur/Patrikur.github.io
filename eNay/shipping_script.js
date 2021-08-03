@@ -5,6 +5,7 @@ const menuMobile = document.querySelector('.menuMobile');
 const closeMenu = document.querySelector('.fa-times');
 const searchbar = document.querySelectorAll('.searchbar');
 const searchBtn = document.querySelectorAll('.fa-search');
+const loader = document.getElementById('loader');
 const items = document.getElementById('items');
 const countries = document.getElementById('countries');
 const messages = ['You are not an easy customer...', 'Just stop it!', 'Seriously?', 'Please, stop!', 'Get some help!', 'Initiate self-destruction...', 'Watch out behind you!', 'Search function disabled'];
@@ -65,6 +66,10 @@ const getCountries = async () => {
     const res = await fetch(url);
     const data = await res.json();
     const arrayLength = data.length;
+
+    if(data.length != 0){
+      loader.style.display = "none";
+    }
     
     for(let i = 0; i <= arrayLength; i++){
       countries.innerHTML += `<p>${data[i].name}</p>`;  

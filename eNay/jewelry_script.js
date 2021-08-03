@@ -7,6 +7,7 @@ const searchbar = document.querySelectorAll('.searchbar');
 const searchBtn = document.querySelectorAll('.fa-search');
 const products = document.getElementById('products');
 const messages = ['You are not an easy customer...', 'Just stop it!', 'Seriously?', 'Please, stop!', 'Get some help!', 'Initiate self-destruction...', 'Watch out behind you!', 'Search function disabled'];
+const loader = document.getElementById('loader');
 
 mobileMenu.addEventListener('click', (e) => {
   if(openMenu.classList.contains('show')){
@@ -70,6 +71,10 @@ const getProduct = async () => {
     const res = await fetch(url);
     const data = await res.json();
     const arrayLength = data.length;
+
+    if(data.length != 0){
+      loader.style.display = "none";
+    }
 
     for(let idx = 0; idx<=data.length; idx++){
      products.innerHTML += `
