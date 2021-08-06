@@ -125,10 +125,6 @@ window.addEventListener('keyup', (e) =>{
                 rightArrow.classList.remove('active');
                 turn = "left";
             }
-        } else if(turn === "left" && crossTeamR.innerText.length === 3){
-            crossTeamL.innerText += 'XXX';
-        } else if(turn === "right" && crossTeamL.innerText.length === 3){
-            crossTeamL.innerText += 'XXX';
         }
     }
 })
