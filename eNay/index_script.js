@@ -15,6 +15,7 @@ const userImage = document.querySelector('.user-image');
 const userName = document.querySelector('.user-name');
 const messages = ['You are not an easy customer...', 'Just stop it!', 'Seriously?', 'Please, stop!', 'Get some help!', 'Initiate self-destruction...', 'Watch out behind you!', 'Search function disabled'];
 
+//mobile menu
 mobileMenu.addEventListener('click', (e) => {
     if(openMenu.classList.contains('show')){
       openMenu.classList.remove('show'),
@@ -28,7 +29,8 @@ mobileMenu.addEventListener('click', (e) => {
       header.style.height = '120px';
     }
 })
-  
+
+//searchbar and button search functions
 searchbar.forEach(bar => {
     bar.addEventListener('keyup', (e)=>{
       if(e.key === 'Enter'){
@@ -47,6 +49,7 @@ searchBtn.forEach(btn => {
     })      
 })
 
+//shopping cart check and update
 let shoppingCart = [];
 
 function checkCart(){
@@ -72,6 +75,9 @@ function checkCart(){
 
 checkCart();
 
+//product carousel
+
+//infinite carousel in both directions
 let idx_array = [0,1,2,3];
 const dataLength = 20;
     
@@ -97,6 +103,7 @@ rightBtn.addEventListener('click', () =>{
     getProduct(idx_array);
 })    
 
+//fetching shopping item data from API
 const getProduct = async (idx_array) => {
     const url = `https://fakestoreapi.com/products`;
     const res = await fetch(url);
@@ -154,6 +161,7 @@ const getProduct = async (idx_array) => {
 
 getProduct(idx_array);
 
+//fetchin user from API
 const getUser = async() =>{
     const url = `https://randomuser.me/api/?inc=name,picture`;
     const res = await fetch(url);

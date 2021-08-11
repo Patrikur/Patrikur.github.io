@@ -14,6 +14,7 @@ const bitcoin = document.querySelector('.bitcoin');
 const blood = document.querySelector('.blood');
 const organ = document.querySelector('.organ');
 
+//mobile menu
 mobileMenu.addEventListener('click', (e) => {
   if(openMenu.classList.contains('show')){
     openMenu.classList.remove('show'),
@@ -28,6 +29,7 @@ mobileMenu.addEventListener('click', (e) => {
   }
 })
 
+//searchbar and button search functions
 searchbar.forEach(bar => {
   bar.addEventListener('keyup', (e)=>{
     if(e.key === 'Enter'){
@@ -46,6 +48,7 @@ searchBtn.forEach(btn => {
   })      
 })
 
+//shopping cart check and update
 let shoppingCart = [];
 
 function checkCart(){
@@ -71,6 +74,7 @@ function checkCart(){
 
 checkCart();
 
+//showing payment method
 function showCard(){
   card.style.display = 'flex';
   online.style.display = 'none';

@@ -9,6 +9,7 @@ const products = document.getElementById('products');
 const messages = ['You are not an easy customer...', 'Just stop it!', 'Seriously?', 'Please, stop!', 'Get some help!', 'Initiate self-destruction...', 'Watch out behind you!', 'Search function disabled'];
 const loader = document.getElementById('loader');
 
+//mobile menu
 mobileMenu.addEventListener('click', (e) => {
   if(openMenu.classList.contains('show')){
     openMenu.classList.remove('show'),
@@ -23,6 +24,7 @@ mobileMenu.addEventListener('click', (e) => {
   }
 })
 
+//searchbar and button search functions
 searchbar.forEach(bar => {
   bar.addEventListener('keyup', (e)=>{
     if(e.key === 'Enter'){
@@ -41,6 +43,7 @@ searchBtn.forEach(btn => {
   })      
 })
 
+//shopping cart check and update
 let shoppingCart = [];
 
 function checkCart(){
@@ -66,6 +69,7 @@ function checkCart(){
   
 checkCart();
 
+//fetching shopping item data from API
 const getProduct = async () => {
     const url = `https://fakestoreapi.com/products/category/electronics`;
     const res = await fetch(url);
