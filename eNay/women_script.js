@@ -80,14 +80,14 @@ const getProduct = async () => {
       loader.style.display = "none";
     }
 
-    for(let idx = 0; idx<=data.length; idx++){
+    for(let idx = 0; idx<data.length; idx++){
      products.innerHTML += `
         <a href='/eNay/product/${data[idx].id}.html'>
         <div class="product">
             <img src="${data[idx].image}"/>
             <strong>${data[idx].title}</strong>
             <span>${(data[idx].price)*100}$</span>
-        </div></a>`   
+        </div></a>`
     }
 }
 

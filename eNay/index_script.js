@@ -109,7 +109,6 @@ const getProduct = async (idx_array) => {
     const url = `https://fakestoreapi.com/products`;
     const res = await fetch(url);
     const data = await res.json();
-    const arrayLength = data.length;
     
     if(data.length != 0){
         loader.style.display = "none";

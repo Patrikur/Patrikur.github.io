@@ -75,13 +75,12 @@ const getProduct = async () => {
     const url = `https://fakestoreapi.com/products/`;
     const res = await fetch(url);
     const data = await res.json();
-    const arrayLength = data.length;
 
     if(data.length != 0){
       loader.style.display = "none";
     }
 
-    for(let idx = 0; idx<=data.length; idx++){
+    for(let idx = 0; idx<data.length; idx++){
      products.innerHTML += `
         <a href='/eNay/product/${data[idx].id}.html'>
         <div class="product">
