@@ -6,8 +6,9 @@ const closeMenu = document.querySelector('.fa-times');
 const searchbar = document.querySelectorAll('.searchbar');
 const searchBtn = document.querySelectorAll('.fa-search');
 const products = document.getElementById('products');
-const messages = ['You are not an easy customer...', 'Just stop it!', 'Seriously?', 'Please, stop!', 'Get some help!', 'Initiate self-destruction...', 'Watch out behind you!', 'Search function disabled'];
 const loader = document.getElementById('loader');
+
+import { messages } from './messages.js';
 
 //mobile menu
 mobileMenu.addEventListener('click', (e) => {
@@ -74,7 +75,6 @@ const getProduct = async () => {
     const url = `https://fakestoreapi.com/products/category/women's%20clothing`;
     const res = await fetch(url);
     const data = await res.json();
-    const arrayLength = data.length;
 
     if(data.length != 0){
       loader.style.display = "none";

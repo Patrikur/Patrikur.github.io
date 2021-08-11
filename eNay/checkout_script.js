@@ -6,13 +6,13 @@ const closeMenu = document.querySelector('.fa-times');
 const searchbar = document.querySelectorAll('.searchbar');
 const searchBtn = document.querySelectorAll('.fa-search');
 const items = document.getElementById('items');
-const messages = ['You are not an easy customer...', 'Just stop it!', 'Seriously?', 'Please, stop!', 'Get some help!', 'Initiate self-destruction...', 'Watch out behind you!', 'Search function disabled'];
-const popUps = ['Local restrictions do not allow that many pixels in such a small place.', 'Are you sure you want to see that many details?','Error code 3:16. Stone Cold stunned the viewport.', 'Puh...I am out of creative answers. Do you have one?','Welcome to Jurassic Park!'];
 const card = document.querySelector('.card');
 const online = document.querySelector('.online');
 const bitcoin = document.querySelector('.bitcoin');
 const blood = document.querySelector('.blood');
 const organ = document.querySelector('.organ');
+
+import { messages } from './messages.js';
 
 //mobile menu
 mobileMenu.addEventListener('click', (e) => {

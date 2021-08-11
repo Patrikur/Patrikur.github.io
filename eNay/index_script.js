@@ -13,7 +13,8 @@ const rightBtn = document.querySelector('.fa-angle-right');
 const testimonial = document.querySelector('.testimonial');
 const userImage = document.querySelector('.user-image');
 const userName = document.querySelector('.user-name');
-const messages = ['You are not an easy customer...', 'Just stop it!', 'Seriously?', 'Please, stop!', 'Get some help!', 'Initiate self-destruction...', 'Watch out behind you!', 'Search function disabled'];
+
+import { messages } from './messages.js';
 
 //mobile menu
 mobileMenu.addEventListener('click', (e) => {
