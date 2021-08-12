@@ -69,14 +69,6 @@ footer {
   text-align: center;
 }
 
-#leftArrow,
-#rightArrow {
-  display: none;
-}
-
-#leftArrow.active,
-#rightArrow.active {
-  display: inline-block;
+.turn {
   font-size: 3rem;
-  font-weight: none;
 }
