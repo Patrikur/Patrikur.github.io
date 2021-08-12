@@ -65,7 +65,7 @@ const questions = [
         },
         4:{
             answer:'Antonio Inoki Retirement',
-            points:39
+            points:38
         }
     },
     {

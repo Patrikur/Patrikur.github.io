@@ -40,31 +40,6 @@ function randomTeam(){
     }
 }
 
-//load current round
-function loadRound (round){
-    answers.innerHTML = "";
-    points.innerHTML = "";
-    crossTeamR.innerText = '';
-    crossTeamL.innerText = '';
-
-    for(let i=1; i< Object.keys(questions[round]).length; i++){
-        answers.innerHTML += `
-        <p>${i}. <span id="answer${i}"></span></p>
-        `
-        points.innerHTML += `
-        <p id="points${i}">0</p>
-        `
-    }
-    question.innerHTML = `${questions[round].question}`;
-    currentRound.innerText = 0;
-    teamLPoints.innerText = scoreL;
-    teamRPoints.innerText = scoreR;
-    playingRound = true;
-    randomTeam();
-}
-
-loadRound(round);
-
 //Finish round and add points to total
 function finishRound(){
     if(turn === "left"){
@@ -78,19 +53,54 @@ function finishRound(){
     }
 }
 
+//load current round
+function loadRound (round){
+    if(round != 0){
+        let roundAnswers = document.querySelectorAll('.roundAnswer');
+        roundAnswers.forEach(roundAnswer => {
+            roundAnswer.remove();
+        })
+    }
+    crossTeamR.innerText = "";
+    crossTeamL.innerText = "";
+
+    for(let i=1; i< Object.keys(questions[round]).length; i++){
+        answers.innerHTML += `
+        <p class="roundAnswer">${i}. <span id="answer${i}"></span></p>
+        `
+        points.innerHTML += `
+        <p class="roundAnswer" id="points${i}">0</p>
+        `
+        console.log(i);
+    }
+    question.innerHTML = `${questions[round].question}`;
+    currentRound.innerText = 0;
+    teamLPoints.innerText = scoreL;
+    teamRPoints.innerText = scoreR;
+    playingRound = true;
+    randomTeam();
+    loadDOM();    
+}
+
+loadRound(round);
+
 //Get answers and points
-const answer1 = document.getElementById('answer1');
-const answer2 = document.getElementById('answer2');
-const answer3 = document.getElementById('answer3');
-const answer4 = document.getElementById('answer4');
-const answer5 = document.getElementById('answer5');
-const answer6 = document.getElementById('answer6');
-const points1 = document.getElementById('points1');
-const points2 = document.getElementById('points2');
-const points3 = document.getElementById('points3');
-const points4 = document.getElementById('points4');
-const points5 = document.getElementById('points5');
-const points6 = document.getElementById('points6');
+function loadDOM(){
+    const answer1 = document.getElementById('answer1');
+    const answer2 = document.getElementById('answer2');
+    const answer3 = document.getElementById('answer3');
+    const answer4 = document.getElementById('answer4');
+    const answer5 = document.getElementById('answer5');
+    const answer6 = document.getElementById('answer6');
+    const points1 = document.getElementById('points1');
+    const points2 = document.getElementById('points2');
+    const points3 = document.getElementById('points3');
+    const points4 = document.getElementById('points4');
+    const points5 = document.getElementById('points5');
+    const points6 = document.getElementById('points6'); 
+}
+
+
 
 window.addEventListener('keyup', (e) =>{
     switch(e.key){
@@ -174,12 +184,11 @@ window.addEventListener('keyup', (e) =>{
                 finishRound();
             }   
         } else {
-            answer6.innerHTML = `${questions[round][6].answer}`;1
+            answer6.innerHTML = `${questions[round][6].answer}`;
             points6.innerHTML = `${questions[round][6].points}`;
         }
         break;
     case 'x':
-        console.log(e.key);
         if (turn === "right" && crossTeamL.innerText.length === 3) {
             crossTeamR.innerText = 'XXX';
             turn = "left";
@@ -203,6 +212,7 @@ window.addEventListener('keyup', (e) =>{
                 turn = "left";
             }
         }
+        break;
     case 'Enter':
         if(round < questions.length-1){
             round += 1;
