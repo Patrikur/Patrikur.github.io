@@ -1,5 +1,9 @@
 import { questions } from "./questions.js";
 
+const main = document.getElementById('main');
+const answerSection = document.getElementById('answerSection');
+const questionSection = document.getElementById('questionSection');
+const crossSection = document.getElementById('crossSection');
 const question = document.getElementById('question');
 const answers = document.getElementById('answers');
 const points = document.getElementById('points');
@@ -12,10 +16,11 @@ const teamRPoints = document.getElementById('teamR-points');
 const leftArrow = document.getElementById('leftArrow');
 const rightArrow = document.getElementById('rightArrow');
 const currentRound = document.getElementById('currentRound');
+const footer = document.getElementById('footer');
 
 //Basic settings
-let teamL;
-let teamR;
+let teamL = teamLName.innerText;
+let teamR = teamRName.innerText;
 
 let round = 0;
 let playingRound = true;
@@ -74,7 +79,8 @@ function loadRound (round){
         console.log(i);
     }
     question.innerHTML = `${questions[round].question}`;
-    currentRound.innerText = 0;
+    scoreRound = 0;
+    currentRound.innerText = scoreRound;
     teamLPoints.innerText = scoreL;
     teamRPoints.innerText = scoreR;
     playingRound = true;
@@ -83,6 +89,29 @@ function loadRound (round){
 }
 
 loadRound(round);
+
+//load final screen
+function finalScore(){
+    footer.remove();
+    answerSection.remove();
+    questionSection.remove();
+    crossSection.remove();
+    if(scoreL > scoreR){
+        main.innerHTML = `
+        <div class="final-score" id="finalScore">
+            <h2>WINNERS</h2>
+            <p>${teamL}</p>
+        </div>
+        `;
+    } else{
+        main.innerHTML = `
+        <div class="final-score" id="finalScore">
+            <h2>WINNERS</h2>
+            <p>${teamR}</p>
+        </div>
+        `;
+    }
+}
 
 //Get answers and points
 function loadDOM(){
@@ -99,8 +128,6 @@ function loadDOM(){
     const points5 = document.getElementById('points5');
     const points6 = document.getElementById('points6'); 
 }
-
-
 
 window.addEventListener('keyup', (e) =>{
     switch(e.key){
@@ -189,7 +216,9 @@ window.addEventListener('keyup', (e) =>{
         }
         break;
     case 'x':
-        if (turn === "right" && crossTeamL.innerText.length === 3) {
+        if (crossTeamR.innerText.length === 3 && crossTeamL.innerText.length === 3){
+            break;
+        } else if (turn === "right" && crossTeamL.innerText.length === 3) {
             crossTeamR.innerText = 'XXX';
             turn = "left";
             finishRound();
@@ -217,6 +246,8 @@ window.addEventListener('keyup', (e) =>{
         if(round < questions.length-1){
             round += 1;
             loadRound (round);
+        } else {
+            finalScore();
         }
         
     }
