@@ -4,7 +4,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow: hidden;
 }
 
 body {
@@ -14,6 +13,33 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+}
+
+.title-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title-main {
+  margin: 20px;
+  font-size: 2.5rem;
+  animation: finalAnimation 0.5 infinite;
+}
+
+.title-main h1 {
+  animation: finalAnimation 0.5 infinite;
+}
+
+.title-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 header,
@@ -29,7 +55,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: calc(100vh - 160px - 2px);
+  min-height: calc(100vh - 160px - 2px - 80px);
 }
 
 .answer-section {
@@ -85,6 +111,16 @@ main {
   padding: 20px;
 }
 
+.crossBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dotted rgb(102, 255, 2);
+  width: 90px;
+  height: 50px;
+  padding: 2px;
+}
+
 footer {
   color: rgb(102, 255, 2);
   background-color: black;
@@ -93,7 +129,7 @@ footer {
   font-weight: bold;
   bottom: 0;
   width: 100%;
-  height: 15vh;
+  height: 80px;
 }
 
 #currentRound {
