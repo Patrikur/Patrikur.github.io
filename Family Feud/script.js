@@ -17,6 +17,10 @@ const leftArrow = document.getElementById('leftArrow');
 const rightArrow = document.getElementById('rightArrow');
 const currentRound = document.getElementById('currentRound');
 const footer = document.getElementById('footer');
+const failSound = new Audio('/Family Feud/Sounds/web_sounds_fail.mp3');
+const intro = new Audio('/Family Feud/Sounds/web_sounds_intro.mp3');
+const rightNum = new Audio('/Family Feud/Sounds/web_sounds_rightNumber.mp3');
+const rightTxt = new Audio('/Family Feud/Sounds/web_sounds_rightText.mp3');
 
 //Basic settings
 let teamL = teamLName.innerText;
@@ -76,7 +80,6 @@ function loadRound (round){
         points.innerHTML += `
         <p class="roundAnswer" id="points${i}">0</p>
         `
-        console.log(i);
     }
     question.innerHTML = `${questions[round].question}`;
     scoreRound = 0;
@@ -134,99 +137,150 @@ window.addEventListener('keyup', (e) =>{
     case '1':
         if(points1.innerHTML != `${questions[round][1].points}` && (crossTeamL.innerText.length != 3 || crossTeamR.innerText.length != 3)){
             answer1.innerHTML = `${questions[round][1].answer}`;
-            points1.innerHTML = `${questions[round][1].points}`;
-            scoreRound += questions[round][1].points;
-            currentRound.innerText = scoreRound;
-            if(Number.isInteger(scoreRound/100)){
+            rightTxt.play();
+            setTimeout(function(){
+                points1.innerHTML = `${questions[round][1].points}`;
+                rightNum.play();
+                scoreRound += questions[round][1].points;
+                currentRound.innerText = scoreRound;
+                if(Number.isInteger(scoreRound/100)){
                 finishRound();
-            }   
+                }   
+            }, 1100); 
         } else {
             answer1.innerHTML = `${questions[round][1].answer}`;
-            points1.innerHTML = `${questions[round][1].points}`;
+            rightTxt.play();
+            setTimeout(function(){
+                points1.innerHTML = `${questions[round][1].points}`;
+                rightNum.play(); 
+            }, 1100);
         }
         break;
     case '2':
         if(points2.innerHTML != `${questions[round][2].points}` && (crossTeamL.innerText.length != 3 || crossTeamR.innerText.length != 3)){
             answer2.innerHTML = `${questions[round][2].answer}`;
-            points2.innerHTML = `${questions[round][2].points}`;
-            scoreRound += questions[round][2].points;
-            currentRound.innerText = scoreRound;
-            if(Number.isInteger(scoreRound/100)){
+            rightTxt.play();
+            setTimeout(function(){
+                points2.innerHTML = `${questions[round][2].points}`;
+                rightNum.play();
+                scoreRound += questions[round][2].points;
+                currentRound.innerText = scoreRound;
+                if(Number.isInteger(scoreRound/100)){
                 finishRound();
-            }   
+                }   
+            }, 1100); 
         } else {
             answer2.innerHTML = `${questions[round][2].answer}`;
-            points2.innerHTML = `${questions[round][2].points}`;
+            rightTxt.play();
+            setTimeout(function(){
+                points2.innerHTML = `${questions[round][2].points}`;
+                rightNum.play(); 
+            }, 1100);
         }
         break;
     case '3':
         if(points3.innerHTML != `${questions[round][3].points}` && (crossTeamL.innerText.length != 3 || crossTeamR.innerText.length != 3)){
             answer3.innerHTML = `${questions[round][3].answer}`;
-            points3.innerHTML = `${questions[round][3].points}`;
-            scoreRound += questions[round][3].points;
-            currentRound.innerText = scoreRound;
-            if(Number.isInteger(scoreRound/100)){
+            rightTxt.play();
+            setTimeout(function(){
+                points3.innerHTML = `${questions[round][3].points}`;
+                rightNum.play();
+                scoreRound += questions[round][3].points;
+                currentRound.innerText = scoreRound;
+                if(Number.isInteger(scoreRound/100)){
                 finishRound();
-            }   
+                }   
+            }, 1100); 
         } else {
             answer3.innerHTML = `${questions[round][3].answer}`;
-            points3.innerHTML = `${questions[round][3].points}`;
+            rightTxt.play();
+            setTimeout(function(){
+                points3.innerHTML = `${questions[round][3].points}`;
+                rightNum.play(); 
+            }, 1100);
         }
         break;
     case '4':
         if(points4.innerHTML != `${questions[round][4].points}` && (crossTeamL.innerText.length != 3 || crossTeamR.innerText.length != 3)){
             answer4.innerHTML = `${questions[round][4].answer}`;
-            points4.innerHTML = `${questions[round][4].points}`;
-            scoreRound += questions[round][4].points;
-            currentRound.innerText = scoreRound;
-            if(Number.isInteger(scoreRound/100)){
+            rightTxt.play();
+            setTimeout(function(){
+                points4.innerHTML = `${questions[round][4].points}`;
+                rightNum.play();
+                scoreRound += questions[round][4].points;
+                currentRound.innerText = scoreRound;
+                if(Number.isInteger(scoreRound/100)){
                 finishRound();
-            }   
+                }   
+            }, 1100); 
         } else {
             answer4.innerHTML = `${questions[round][4].answer}`;
-            points4.innerHTML = `${questions[round][4].points}`;
+            rightTxt.play();
+            setTimeout(function(){
+                points4.innerHTML = `${questions[round][4].points}`;
+                rightNum.play(); 
+            }, 1100);
         }
         break;        
     case '5':
         if(points5.innerHTML != `${questions[round][5].points}` && (crossTeamL.innerText.length != 3 || crossTeamR.innerText.length != 3)){
             answer5.innerHTML = `${questions[round][5].answer}`;
-            points5.innerHTML = `${questions[round][5].points}`;
-            scoreRound += questions[round][5].points;
-            currentRound.innerText = scoreRound;
-            if(Number.isInteger(scoreRound/100)){
+            rightTxt.play();
+            setTimeout(function(){
+                points5.innerHTML = `${questions[round][5].points}`;
+                rightNum.play();
+                scoreRound += questions[round][5].points;
+                currentRound.innerText = scoreRound;
+                if(Number.isInteger(scoreRound/100)){
                 finishRound();
-            }   
+                }   
+            }, 1100); 
         } else {
             answer5.innerHTML = `${questions[round][5].answer}`;
-            points5.innerHTML = `${questions[round][5].points}`;
+            rightTxt.play();
+            setTimeout(function(){
+                points5.innerHTML = `${questions[round][5].points}`;
+                rightNum.play(); 
+            }, 1100);
         }
         break;
     case '6':
         if(points6.innerHTML != `${questions[round][6].points}` && (crossTeamL.innerText.length != 3 || crossTeamR.innerText.length != 3)){
             answer6.innerHTML = `${questions[round][6].answer}`;
-            points6.innerHTML = `${questions[round][6].points}`;
-            scoreRound += questions[round][6].points;
-            currentRound.innerText = scoreRound;
-            if(Number.isInteger(scoreRound/100)){
+            rightTxt.play();
+            setTimeout(function(){
+                points6.innerHTML = `${questions[round][6].points}`;
+                rightNum.play();
+                scoreRound += questions[round][6].points;
+                currentRound.innerText = scoreRound;
+                if(Number.isInteger(scoreRound/100)){
                 finishRound();
-            }   
+                }   
+            }, 1100); 
         } else {
             answer6.innerHTML = `${questions[round][6].answer}`;
-            points6.innerHTML = `${questions[round][6].points}`;
+            rightTxt.play();
+            setTimeout(function(){
+                points6.innerHTML = `${questions[round][6].points}`;
+                rightNum.play(); 
+            }, 1100);
         }
         break;
     case 'x':
         if (crossTeamR.innerText.length === 3 && crossTeamL.innerText.length === 3){
             break;
         } else if (turn === "right" && crossTeamL.innerText.length === 3) {
+            failSound.play();
             crossTeamR.innerText = 'XXX';
             turn = "left";
             finishRound();
         } else if (turn === "left" && crossTeamR.innerText.length === 3) {
+            failSound.play();
             crossTeamL.innerText = 'XXX';
             turn = "right";
             finishRound();
         } else if (turn === "left" && crossTeamL.innerText.length < 3){
+            failSound.play();
             crossTeamL.innerText += 'X';
             if(crossTeamL.innerText.length === 3){
                 rightArrow.innerHTML = `&#9679;`;
@@ -234,6 +288,7 @@ window.addEventListener('keyup', (e) =>{
                 turn = "right";
             }
         } else if (turn === "right" && crossTeamR.innerText.length < 3) {
+            failSound.play();
             crossTeamR.innerText += 'X';
             if(crossTeamR.innerText.length === 3){
                 leftArrow.innerHTML = `&#9679;`;
