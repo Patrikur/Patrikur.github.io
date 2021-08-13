@@ -53,15 +53,23 @@ header,
 main {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   min-height: calc(100vh - 160px - 2px - 80px);
+}
+
+.mainTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
 }
 
 .answer-section {
   font-size: 2rem;
   font-weight: 900;
-  width: 70%;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -97,6 +105,14 @@ main {
   100% {
     width: 100%;
   }
+}
+
+.mainBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .cross-section {
