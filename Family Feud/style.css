@@ -4,6 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 body {
@@ -19,8 +20,8 @@ header,
 .question {
   font-size: 1.5rem;
   text-align: center;
-  padding: 0;
-  margin: 0;
+  height: 80px;
+  padding: 10px;
 }
 
 main {
@@ -28,24 +29,60 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: calc(100vh - 160px);
 }
 
 .answer-section {
   font-size: 1.75rem;
   font-weight: 900;
+  width: 60%;
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.answers {
+  width: calc(100%-60px);
+}
+
+.points {
+  width: 60px;
+}
+
+.roundAnswer {
+  margin: 10px;
+}
+
+#answer1,
+#answer2,
+#answer3,
+#answer4,
+#answer5,
+#answer6 {
+  width: 0%;
+  animation: animateText 2s ease-in;
+}
+
+@keyframes animateText {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
 .cross-section {
   font-size: 2.5rem;
   font-weight: 900;
+  width: 90%;
+  height: 100px;
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 80px 20px;
+  padding: 20px;
 }
 
 footer {
