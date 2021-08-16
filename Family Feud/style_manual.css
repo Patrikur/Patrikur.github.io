@@ -17,3 +17,41 @@ body {
   margin: 0;
   padding: 0;
 }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+section {
+  margin: 20px 0;
+}
+
+section h2,
+section h3 {
+  margin: 5px 0;
+}
+
+article section a img {
+  height: 400px;
+  width: auto;
+  margin: 10px 0;
+  object-fit: fill;
+}
