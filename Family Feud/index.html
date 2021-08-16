@@ -12,35 +12,43 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Rasslin' Family Feud</title>
+    <title>Family Feud</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <h1>Rasslin' Family Feud</h1>
     </header>
     <main id="main">
-      <div class="mainTop">
-        <div class="question" id="questionSection">
-          <h3 id="question"></h3>
-        </div>
-        <div class="answer-section" id="answerSection">
-          <div class="answers" id="answers"></div>
-          <div class="points" id="points"></div>
+      <div class="title-screen" id="titleScreen">
+        <div class="title-main">
+          <h1>FAMILY FEUD</h1>
+          <span>a browser game programmed by Patrikur</span>
         </div>
       </div>
-      <div class="mainBottom">
-        <div class="cross-section" id="crossSection">
-          <div class="crossBox">
-            <span id="cross-teamL"></span>
-          </div>
-          <div class="crossBox">
-            <span id="cross-teamR"></span>
-          </div>
+      <div class="question" id="questionSection">
+        <h3 id="question"></h3>
+      </div>
+      <div class="answer-section" id="answerSection">
+        <div class="answers" id="answers"></div>
+        <div class="points" id="points"></div>
+      </div>
+      <div class="cross-section" id="crossSection">
+        <div class="crossBox">
+          <span id="cross-teamL"></span>
+        </div>
+        <div id="roundCounter"></div>
+        <div class="crossBox">
+          <span id="cross-teamR"></span>
         </div>
       </div>
     </main>
     <footer id="footer">
-      <div class="score">
+      <div class="title-menu" id="titleMenu">
+        <p>Press S to start</p>
+        <p>Press M to open the manual</p>
+        <p>Press E to enable music</p>
+      </div>
+      <div class="score" id="scoreSection">
         <div id="teamLeft">
           <p id="teamL-name">Lefty Loosy</p>
           <p id="teamL-points"></p>

@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: 'Most WWE Championship Title Reigns',
+        question: 'Most WWE Championship Title Reigns (Male)',
         1: {
             answer:'John Cena',
             points: 25

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Codystar:wght@300&display=swap");
 
+:root {
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -23,13 +27,21 @@ body {
 }
 
 .title-main {
-  margin: 20px;
-  font-size: 2.5rem;
-  animation: finalAnimation 0.5 infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 3rem;
+  height: 80vh;
+}
+
+.title-main span {
+  font-size: 1.25rem;
 }
 
 .title-main h1 {
-  animation: finalAnimation 0.5 infinite;
+  animation: finalAnimation 0.9s infinite;
 }
 
 .title-menu {
@@ -37,17 +49,27 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 20px;
+  padding: 20px;
   font-size: 1.5rem;
   font-weight: 900;
+  height: 20vh;
 }
 
-header,
-.question {
+header {
+  display: none;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
-  text-align: center;
   height: 80px;
   padding: 10px;
+  text-align: center;
+}
+
+.question {
+  display: none;
+  font-size: 1.5rem;
+  padding: 10px;
+  height: calc(1.5rem + 20px);
 }
 
 main {
@@ -55,31 +77,25 @@ main {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  min-height: calc(100vh - 160px - 2px - 80px);
-}
-
-.mainTop {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 70%;
 }
 
 .answer-section {
   font-size: 2rem;
   font-weight: 900;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
+  width: 70%;
+  display: none;
+  align-items: center;
   justify-content: space-between;
+  min-height: calc(100vh - 100px - 33px - 100px - 80px);
 }
 
 .answers {
+  display: none;
   width: calc(100%-70px);
 }
 
 .points {
+  display: none;
   width: 70px;
 }
 
@@ -87,19 +103,18 @@ main {
   margin: 10px;
 }
 
-#answer1,
-#answer2,
-#answer3,
-#answer4,
-#answer5,
-#answer6 {
+.answerAnimation {
   width: 0%;
-  animation: animateText 2s ease-in;
+  animation: animateText 5s ease-in;
 }
 
 @keyframes animateText {
   0% {
     width: 0%;
+  }
+
+  50% {
+    width: 50%;
   }
 
   100% {
@@ -120,7 +135,7 @@ main {
   font-weight: 900;
   width: 90%;
   height: 100px;
-  display: flex;
+  display: none;
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
@@ -140,7 +155,6 @@ main {
 footer {
   color: rgb(102, 255, 2);
   background-color: black;
-  border-top: 2px dotted rgb(102, 255, 2);
   font-size: 2rem;
   font-weight: bold;
   bottom: 0;
@@ -153,7 +167,7 @@ footer {
 }
 
 .score {
-  display: flex;
+  display: none;
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
@@ -176,7 +190,8 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 5rem;
+  height: 80vh;
   animation: finalAnimation 0.5s infinite;
 }
 

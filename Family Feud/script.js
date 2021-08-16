@@ -1,21 +1,26 @@
 import { questions } from "./questions.js";
 
+const header = document.getElementById('header');
 const main = document.getElementById('main');
+const titleScreen = document.getElementById('titleScreen');
 const answerSection = document.getElementById('answerSection');
 const questionSection = document.getElementById('questionSection');
 const crossSection = document.getElementById('crossSection');
 const question = document.getElementById('question');
 const answers = document.getElementById('answers');
 const points = document.getElementById('points');
-const crossTeamL = document.getElementById('cross-teamL');
-const crossTeamR = document.getElementById('cross-teamR');
 const teamLName = document.getElementById('teamL-name');
 const teamRName = document.getElementById('teamR-name');
-const teamLPoints = document.getElementById('teamL-points');
-const teamRPoints = document.getElementById('teamR-points');
+const crossTeamL = document.getElementById('cross-teamL');
+const crossTeamR = document.getElementById('cross-teamR');
+const roundCounter = document.getElementById('roundCounter');
 const leftArrow = document.getElementById('leftArrow');
 const rightArrow = document.getElementById('rightArrow');
+const scoreSection = document.getElementById('scoreSection');
+const teamLPoints = document.getElementById('teamL-points');
+const teamRPoints = document.getElementById('teamR-points');
 const currentRound = document.getElementById('currentRound');
+const titleMenu = document.getElementById('titleMenu');
 const footer = document.getElementById('footer');
 const failSound = new Audio('/Family Feud/Sounds/web_sounds_fail.mp3');
 const intro = new Audio('/Family Feud/Sounds/web_sounds_intro.mp3');
@@ -23,8 +28,8 @@ const rightNum = new Audio('/Family Feud/Sounds/web_sounds_rightNumber.mp3');
 const rightTxt = new Audio('/Family Feud/Sounds/web_sounds_rightText.mp3');
 
 //Basic settings
-let teamL = teamLName.innerText;
-let teamR = teamRName.innerText;
+let teamL;
+let teamR;
 
 let round = 0;
 let playingRound = true;
@@ -34,6 +39,25 @@ let turn;
 let scoreL = 0;
 let scoreR = 0;
 let scoreRound = 0;
+
+//starting game function
+
+function startGame(round){
+    titleScreen.remove();
+    titleMenu.remove();
+    header.style.display = 'flex';
+    questionSection.style.display = 'inline-block';
+    answerSection.style.display = 'flex';
+    crossSection.style.display = 'flex';
+    scoreSection.style.display = 'flex';
+    answers.style.display = 'inline';
+    points.style.display = 'inline';
+    footer.style.borderTop = '2px dotted rgb(102, 255, 2)';
+    currentRound.innerText = scoreRound;
+    teamLPoints.innerText = scoreL;
+    teamRPoints.innerText = scoreR;
+    loadRound(round);
+}
 
 //Choose random team
 function randomTeam(){
@@ -64,6 +88,8 @@ function finishRound(){
 
 //load current round
 function loadRound (round){
+    randomTeam();
+    loadDOM(); 
     if(round != 0){
         let roundAnswers = document.querySelectorAll('.roundAnswer');
         roundAnswers.forEach(roundAnswer => {
@@ -81,17 +107,15 @@ function loadRound (round){
         <p class="roundAnswer" id="points${i}">0</p>
         `
     }
-    question.innerHTML = `${questions[round].question}`;
+    
     scoreRound = 0;
-    currentRound.innerText = scoreRound;
-    teamLPoints.innerText = scoreL;
-    teamRPoints.innerText = scoreR;
+    question.innerHTML = '';
+    roundCounter.innerHTML = `
+    Round ${round + 1}
+    `;
     playingRound = true;
-    randomTeam();
-    loadDOM();    
+       
 }
-
-loadRound(round);
 
 //load final screen
 function finalScore(){
@@ -105,14 +129,14 @@ function finalScore(){
         main.innerHTML = `
         <div class="final-score" id="finalScore">
             <h2>WINNERS</h2>
-            <p>${teamL}</p>
+            <p>${teamLName.innerText}</p>
         </div>
         `;
     } else{
         main.innerHTML = `
         <div class="final-score" id="finalScore">
             <h2>WINNERS</h2>
-            <p>${teamR}</p>
+            <p>${teamRName.innerText}</p>
         </div>
         `;
     }
@@ -131,14 +155,15 @@ function loadDOM(){
     const points3 = document.getElementById('points3');
     const points4 = document.getElementById('points4');
     const points5 = document.getElementById('points5');
-    const points6 = document.getElementById('points6'); 
+    const points6 = document.getElementById('points6');
+    
 }
 
 window.addEventListener('keyup', (e) =>{
     switch(e.key){
     case '1':
         if((crossTeamL.innerText.length === 3 || crossTeamR.innerText.length === 3) && playingRound){
-            answer1.innerHTML = `${questions[round][1].answer}`;
+            answer1.innerHTML = `<span class="answerAnimation">${questions[round][1].answer}</span>`;
             rightTxt.play();
             setTimeout(function(){
                 points1.innerHTML = `${questions[round][1].points}`;
@@ -149,7 +174,7 @@ window.addEventListener('keyup', (e) =>{
                 finishRound(); 
             }, 1100); 
         } else if(points1.innerHTML != `${questions[round][1].points}` && (crossTeamL.innerText.length != 3 || crossTeamR.innerText.length != 3) && playingRound){
-            answer1.innerHTML = `${questions[round][1].answer}`;
+            answer1.innerHTML = `<span class="answerAnimation">${questions[round][1].answer}</span>`;
             rightTxt.play();
             setTimeout(function(){
                 points1.innerHTML = `${questions[round][1].points}`;
@@ -162,7 +187,7 @@ window.addEventListener('keyup', (e) =>{
                 }   
             }, 1100); 
         } else {
-            answer1.innerHTML = `${questions[round][1].answer}`;
+            answer1.innerHTML = `<span class="answerAnimation">${questions[round][1].answer}</span>`;
             rightTxt.play();
             setTimeout(function(){
                 points1.innerHTML = `${questions[round][1].points}`;
@@ -172,7 +197,7 @@ window.addEventListener('keyup', (e) =>{
         break;
     case '2':
         if((crossTeamL.innerText.length === 3 || crossTeamR.innerText.length === 3) && playingRound){
-            answer2.innerHTML = `${questions[round][2].answer}`;
+            answer2.innerHTML = `<span class="answerAnimation">${questions[round][2].answer}</span>`;
             rightTxt.play();
             setTimeout(function(){
                 points2.innerHTML = `${questions[round][2].points}`;
@@ -183,7 +208,7 @@ window.addEventListener('keyup', (e) =>{
                 finishRound(); 
             }, 1100);
         }else if(points2.innerHTML != `${questions[round][2].points}` && (crossTeamL.innerText.length != 3 || crossTeamR.innerText.length != 3) && playingRound){
-            answer2.innerHTML = `${questions[round][2].answer}`;
+            answer2.innerHTML = `<span class="answerAnimation">${questions[round][2].answer}</span>`;
             rightTxt.play();
             setTimeout(function(){
                 points2.innerHTML = `${questions[round][2].points}`;
@@ -196,7 +221,7 @@ window.addEventListener('keyup', (e) =>{
                 }   
             }, 1100); 
         } else {
-            answer2.innerHTML = `${questions[round][2].answer}`;
+            answer2.innerHTML = `<span class="answerAnimation">${questions[round][2].answer}</span>`;
             rightTxt.play();
             setTimeout(function(){
                 points2.innerHTML = `${questions[round][2].points}`;
@@ -378,7 +403,20 @@ window.addEventListener('keyup', (e) =>{
         } else {
             finalScore();
         }
-        
+        break;
+    case 's':
+        startGame(round);
+        intro.pause();
+        break;
+    case 'm':
+        window.open('manual.html');
+        break;
+    case 'q':
+        question.innerHTML = `${questions[round].question}`;
+        rightTxt.play();
+        break;
+    case 'e':
+        intro.play();    
     }
 })
 
