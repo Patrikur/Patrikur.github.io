@@ -34,7 +34,7 @@ main {
 
 article {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   width: 80%;
@@ -50,8 +50,12 @@ section h3 {
 }
 
 article section a img {
-  height: 400px;
-  width: auto;
+  height: auto;
+  width: 100%;
   margin: 10px 0;
-  object-fit: fill;
+}
+
+.picture {
+  margin: 10px 0;
+  width: 100%;
 }
