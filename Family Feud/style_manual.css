@@ -23,6 +23,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 20px 0;
 }
 
 main {
@@ -40,8 +41,21 @@ article {
   width: 80%;
 }
 
+ul li a {
+  font-size: 1.25rem;
+  color: black;
+}
+
+ul {
+  list-style-position: inside;
+}
+
 section {
-  margin: 20px 0;
+  margin: 5px 0;
+}
+
+section span {
+  margin: 5px 0;
 }
 
 section h2,
@@ -49,13 +63,19 @@ section h3 {
   margin: 5px 0;
 }
 
-article section a img {
+.picture a img {
   height: auto;
-  width: 100%;
-  margin: 10px 0;
+  width: 70%;
 }
 
 .picture {
-  margin: 10px 0;
+  margin: 20px 0;
   width: 100%;
+}
+
+footer {
+  width: 100%;
+  font-weight: 900;
+  text-align: center;
+  margin: 10px 0;
 }
