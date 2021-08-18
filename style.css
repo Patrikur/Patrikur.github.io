@@ -88,6 +88,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-flow: column;
+  padding: 20px 0 20px;
 }
 
 .scroll.active {
@@ -120,8 +121,7 @@ main {
   justify-content: center;
   flex-direction: column;
   background-color: white;
-  padding: 5px;
-  margin: 20px 0;
+  margin: 0px 0;
   border-radius: 10px;
   width: 95vw;
 }
@@ -129,7 +129,7 @@ main {
 .head-section,
 .project-section,
 .foot-section {
-  margin: 10px 0;
+  margin: 0;
   width: 100%;
 }
 
