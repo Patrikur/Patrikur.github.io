@@ -12,6 +12,50 @@
     <title>eNay | Checkout</title>
   </head>
   <body>
+    <div class="overlay" id="overlay">
+      <i class="far fa-times-circle"></i>
+      <div class="message" id="overlay1">
+        <span
+          >Are you really sure? You can still get the items at other shops which
+          ship faster and are way cheaper than we are!</span
+        >
+        <div class="buttons">
+          <button class="btn" onclick="openMessage2()">
+            I know, but I'm sure
+          </button>
+          <button class="btn" onclick="window.open('https://www.amazon.com/')">
+            Okay okay
+          </button>
+        </div>
+      </div>
+      <div class="message" id="overlay2">
+        <span>What has a head and a tail but no body?</span>
+        <div class="buttons">
+          <button class="btn" onclick="openMessage3()">A coin</button>
+          <button
+            class="btn"
+            onclick="window.open('https://en.wikipedia.org/wiki/Tadpole')"
+          >
+            A tadpole
+          </button>
+        </div>
+      </div>
+      <div class="message" id="overlay3">
+        <span
+          >Okay, nerd! You made it this far. But if you execute that order, we
+          will have to fold. Are you aware of the magnitude the click you are
+          about to do will have on us?</span
+        >
+        <div class="buttons">
+          <button class="btn" onclick="window.location.replace('end.html')">
+            I am aware and do not care. Bring me my goods!
+          </button>
+          <button class="btn" onclick="closeOverlay()">
+            I cannot handle it, the responsibility is too high.
+          </button>
+        </div>
+      </div>
+    </div>
     <header class="header">
       <div class="topsection">
         <div class="mobileMenu" id="mobileMenu">
@@ -389,9 +433,9 @@
               </div>
             </div>
             <div class="place-order">
-              <a href="/eNay/end.html"
-                ><button class="button">Place order</button></a
-              >
+              <button class="button" onclick="openOverlay()">
+                Place order
+              </button>
             </div>
           </div>
         </form>
@@ -434,6 +478,6 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="/eNay/checkout_script.js"></script>
+    <script src="/eNay/checkout_script.js"></script>
   </body>
 </html>

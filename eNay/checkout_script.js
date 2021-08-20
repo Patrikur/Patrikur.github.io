@@ -11,8 +11,13 @@ const online = document.querySelector('.online');
 const bitcoin = document.querySelector('.bitcoin');
 const blood = document.querySelector('.blood');
 const organ = document.querySelector('.organ');
+const closeBtn = document.querySelector('.fa-times-circle');
+const overlay = document.getElementById('overlay');
+const overlay1 = document.getElementById('overlay1');
+const overlay2 = document.getElementById('overlay2');
+const overlay3 = document.getElementById('overlay3');
 
-import { messages } from './messages.js';
+const messages = ['You are not an easy customer...', 'Just stop it!', 'Seriously?', 'Please, stop!', 'Get some help!', 'Initiate self-destruction...', 'Watch out behind you!', 'Search function disabled'];
 
 //mobile menu
 mobileMenu.addEventListener('click', (e) => {
@@ -113,4 +118,26 @@ function showOrgan(){
   bitcoin.style.display = 'none';
   blood.style.display = 'none';
   organ.style.display = 'flex';
+}
+
+//overlay messages
+closeBtn.addEventListener('click', closeOverlay);
+
+function openOverlay(){
+  overlay.style.display = 'flex';
+  overlay1.style.display = 'inline-block';
+}
+
+function openMessage2(){
+  overlay1.style.display = 'none';
+  overlay2.style.display = 'inline-block';
+}
+
+function openMessage3(){
+  overlay2.style.display = 'none';
+  overlay3.style.display = 'inline-block';
+}
+
+function closeOverlay(){
+  overlay.style.display = 'none';
 }

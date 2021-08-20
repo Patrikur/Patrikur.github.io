@@ -11,6 +11,61 @@ body {
   height: 100vh;
 }
 
+.fa-times-circle {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+#overlay2 {
+  display: none;
+}
+
+#overlay3 {
+  display: none;
+}
+
+.message {
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 10px;
+  line-height: 1.6;
+  width: 50%;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: dimgray;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
 .header {
   position: fixed;
   top: 0;
