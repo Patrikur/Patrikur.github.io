@@ -142,3 +142,10 @@ details a {
   background-color: rgba(0, 128, 128, 0.5);
   border-left: 10px solid teal;
 }
+
+@media screen and (min-width: 780px) {
+  body {
+    width: 60vw;
+    margin: 0 20vw;
+  }
+}
