@@ -49,7 +49,7 @@ body {
   padding: 20px;
   margin: 0 10px;
   line-height: 1.6;
-  width: 50%;
+  width: 90%;
 }
 
 .btn {
@@ -425,6 +425,10 @@ main {
     height: 140px;
   }
 
+  .message {
+    width: 50%;
+  }
+
   .header {
     height: 70px;
     justify-content: center;
@@ -535,6 +539,10 @@ main {
   .footer-container {
     flex-flow: row;
     height: 140px;
+  }
+
+  .message {
+    width: 50%;
   }
 
   .header {
