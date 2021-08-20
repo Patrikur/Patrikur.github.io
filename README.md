@@ -119,7 +119,7 @@ The first project started alongside courses to make a practical use of learned l
 * [Features](#features)
 
 ### Project Info
-Recreation of the score- and gameboard from the German version of the gameshow [Family Feud](https://www.buzzfeed.de/buzz/hier-kannst-du-familien-duell-mit-google-nachspielen-90135526.html). Still under development.
+Recreation of the score- and gameboard from the German version of the gameshow [Family Feud](https://www.buzzfeed.de/buzz/hier-kannst-du-familien-duell-mit-google-nachspielen-90135526.html). Not working on mobile devices.
 ### Technologies
 
 ### Features
