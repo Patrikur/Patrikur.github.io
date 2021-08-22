@@ -29,24 +29,24 @@ const questions = [
     {
         question: 'Most televised Shows not produced by WWE',
         1:{
-            answer:'Impact Xplosion',
+            answer:'Impact',
             points: 58
         },
         2:{
-            answer:'Impact',
-            points: 54
+            answer:'Impact Xplosion',
+            points: 56
         },
         3:{
             answer:'Championship Wrestling From Hollywood',
-            points: 31
+            points: 30
         },
         4:{
             answer:'Ring of Honor TV',
-            points:30
+            points: 29
         },
         5:{
             answer: 'ECW Hardcore TV',
-            points:27
+            points: 26
         }
     },
     {
@@ -71,7 +71,7 @@ const questions = [
     {
         question:'Highest Rated Wrestling Games on Metacritic',
         1:{
-            answer:'WWF SmackDown! 2',
+            answer:'WWF SmackDown 2',
             points: 136
         },
         2:{
@@ -79,7 +79,7 @@ const questions = [
             points: 135
         },
         3:{
-            answer:'WWE SmackDown! Here come´s the pain',
+            answer:'WWE SmackDown Here come´s the pain',
             points: 129
         }
     }    
