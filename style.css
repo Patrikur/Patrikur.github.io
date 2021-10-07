@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
   --bg-color: #fd683a;
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -67,7 +67,7 @@ main {
   flex-direction: column;
   text-align: center;
   padding: 0;
-  background-image: url("/volcano_bg.jpg");
+  background-image: url('/volcano_bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -253,7 +253,7 @@ main {
 }
 
 .rea.grow {
-  width: 10%;
+  width: 60%;
   transition: width 0.7s ease-in-out;
 }
 
@@ -367,7 +367,7 @@ main {
 .project-text {
   text-align: justify;
   align-items: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   width: 100%;
   padding: 10px;
 }
