@@ -307,7 +307,7 @@ main {
 }
 
 .uk.grow {
-  width: 90%;
+  width: 95%;
   transition: width 0.7s ease-in-out;
 }
 
@@ -316,7 +316,7 @@ main {
 }
 
 .isl.grow {
-  width: 60%;
+  width: 70%;
   transition: width 0.7s ease-in-out;
 }
 
