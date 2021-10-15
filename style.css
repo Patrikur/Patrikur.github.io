@@ -167,6 +167,39 @@ main {
   justify-content: center;
   flex-direction: column;
   padding: 10px;
+}
+
+.dev-skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+}
+
+.development {
+  width: 100%;
+}
+
+.dev-1,
+.dev-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.other-skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+}
+
+.program,
+.languages {
   width: 100%;
 }
 
@@ -203,7 +236,22 @@ main {
   margin: 0;
 }
 
-.html {
+.html,
+.css,
+.js,
+.py,
+.njs,
+.rea,
+.exp,
+.mon,
+.git,
+.github,
+.gimp,
+.mso,
+.vsc,
+.ger,
+.uk,
+.isl {
   width: 0;
 }
 
@@ -212,17 +260,9 @@ main {
   transition: width 0.7s ease-in-out;
 }
 
-.css {
-  width: 0;
-}
-
 .css.grow {
   width: 80%;
   transition: width 0.7s ease-in-out;
-}
-
-.js {
-  width: 0;
 }
 
 .js.grow {
@@ -230,44 +270,39 @@ main {
   transition: width 0.7s ease-in-out;
 }
 
-.py {
-  width: 0;
-}
-
 .py.grow {
   width: 60%;
   transition: width 0.7s ease-in-out;
 }
 
-.njs {
-  width: 0;
-}
-
 .njs.grow {
-  width: 30%;
-  transition: width 0.7s ease-in-out;
-}
-
-.rea {
-  width: 0;
-}
-
-.rea.grow {
   width: 60%;
   transition: width 0.7s ease-in-out;
 }
 
-.wp {
-  width: 0;
-}
-
-.wp.grow {
-  width: 30%;
+.rea.grow {
+  width: 70%;
   transition: width 0.7s ease-in-out;
 }
 
-.gimp {
-  width: 0;
+.exp.grow {
+  width: 40%;
+  transition: width 0.7s ease-in-out;
+}
+
+.mon.grow {
+  width: 40%;
+  transition: width 0.7s ease-in-out;
+}
+
+.git.grow {
+  width: 50%;
+  transition: width 0.7s ease-in-out;
+}
+
+.github.grow {
+  width: 70%;
+  transition: width 0.7s ease-in-out;
 }
 
 .gimp.grow {
@@ -275,26 +310,14 @@ main {
   transition: width 0.7s ease-in-out;
 }
 
-.mso {
-  width: 0;
-}
-
 .mso.grow {
   width: 90%;
   transition: width 0.7s ease-in-out;
 }
 
-.vsc {
-  width: 0;
-}
-
 .vsc.grow {
-  width: 60%;
+  width: 80%;
   transition: width 0.7s ease-in-out;
-}
-
-.ger {
-  width: 0;
 }
 
 .ger.grow {
@@ -302,17 +325,9 @@ main {
   transition: width 0.7s ease-in-out;
 }
 
-.uk {
-  width: 0;
-}
-
 .uk.grow {
   width: 95%;
   transition: width 0.7s ease-in-out;
-}
-
-.isl {
-  width: 0;
 }
 
 .isl.grow {
@@ -440,19 +455,27 @@ footer {
     width: 80vw;
   }
 
-  .development,
-  .program,
-  .languages {
-    width: 100%;
-  }
-
   .skill {
     flex-direction: row;
     width: 100%;
   }
 
-  .skills {
+  .dev-skills {
     flex-direction: row;
+  }
+
+  .dev-1,
+  .dev-2 {
+    width: 40%;
+  }
+
+  .other-skills {
+    flex-direction: row;
+  }
+
+  .program,
+  .languages {
+    width: 40%;
   }
 
   .project {
@@ -490,19 +513,27 @@ footer {
     width: 80vw;
   }
 
-  .development,
-  .program,
-  .languages {
-    width: 100%;
-  }
-
   .skill {
     flex-direction: row;
     width: 100%;
   }
 
-  .skills {
+  .dev-skills {
     flex-direction: row;
+  }
+
+  .dev-1,
+  .dev-2 {
+    width: 40%;
+  }
+
+  .other-skills {
+    flex-direction: row;
+  }
+
+  .program,
+  .languages {
+    width: 40%;
   }
 
   .project {
