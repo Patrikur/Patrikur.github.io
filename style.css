@@ -400,16 +400,24 @@ main {
 .gif-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.gif-top,
+.gif-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-flow: row wrap;
 }
 
 .gif {
   margin: 5px;
   padding: 5px;
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 45%;
   object-fit: cover;
 }
 
