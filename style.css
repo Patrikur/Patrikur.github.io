@@ -404,14 +404,6 @@ main {
   flex-flow: row wrap;
 }
 
-.gif-top,
-.gif-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-flow: row wrap;
-}
-
 .gif {
   margin: 5px;
   padding: 5px;
