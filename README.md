@@ -2,13 +2,11 @@
 
 Hæ, I’m @Patrikur, a junior-level web developer.
 You can find the code for my current projects as well as my portfolio in this repository. Most of the pages are published with GitHub Pages. I included the links to every project within this documentation as well.
-I’m currently learning to set up a proper backend server with Node.Js & MySQL to implement headless CMS solutions in two projects.
 
 ## Content
 * [Portfolio page](#portfolio-page)
 * [Grotenburg-Supporters](#grotenburg-supporters)
 * [eNay - The Lazy Onlineshop](#enay---the-lazy-onlineshop)
-* [Hildur - Psychotherapy](#hildur---psychotherapy)
 * [Family Feud Browser Game](#family-feud-browser-game)
 
 ## [Portfolio page](https://patrikur.github.io)
@@ -88,29 +86,6 @@ Project created with:
 * several alert popups which are telling the user that certain features do not work in this shop, messages created in a self-created array
 * checkout process is made very complicated with a lot of unnecessary data to put into the forms, animation on form fields shall annoy and create a bad overview, a lot of required fields to check before checkout button works and reveals the final site
 * mobile version
-
-## [Hildur - Psychotherapy](https://patrikur.github.io/Hildur/index.html)
-### Table of content
-* [Project Info](#project-info)
-* [Technologies](#technologies)
-* [Features](#features)
-
-### Project Info
-The first project started alongside courses to make a practical use of learned lessons. Updating design of my therapist's website as well as planning to implement headless CMS solution. Unfinished project.
-
-### Technologies
-* HTML5
-* CSS3
-* Vanilla JavaScript
-* CSS menu code from [Erik Terwan's CodePen](https://codepen.io/erikterwan/pen/EVzeRP)
-* [Fontawesome library](https://fontawesome.com/)
-
-### Features
-* landing pages with different designs, such as tiles or implementing personal wishes
-* simplified menu structures
-* footer with necessary contact info for easier contact
-* mobile menu created only with CSS code from previously mentioned CodePen
-* planning of implementation of headless CMS to manage contact better and give the site a leaner structure and look
 
 ## [Family Feud Browser Game](https://patrikur.github.io/Family%20Feud/index.html)
 ### Table of content
