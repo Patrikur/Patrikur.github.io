@@ -1,86 +1,86 @@
 const questions = [
     {
-        question: 'Most WWE Championship Title Reigns (Male)',
+        question: 'Most sold video game consoles',
         1: {
-            answer:'John Cena',
-            points: 25
+            answer:'PlayStation 2',
+            points: 21
         },
         2:{
-            answer:'Randy Orton',
-            points: 19
+            answer:'Nintendo DS',
+            points: 20
         },
         3:{
-            answer:'Triple H',
-            points: 17
+            answer:'Game Boy',
+            points: 16
         },
         4:{
-            answer:'The Rock',
-            points:15
+            answer:'PlayStation 4',
+            points: 15
         },
         5:{
-            answer:'Hulk Hogan',
-            points:12
+            answer:'PlayStation One',
+            points: 14
         }, 
         6:{
-            answer:'Steve Austin',
-            points:12
+            answer:'Nintendo WIi',
+            points: 14
         }
     },
     {
-        question: 'Most televised Shows not produced by WWE',
+        question: 'Biggest publishers according to revenue 2020',
         1:{
-            answer:'Impact',
-            points: 58
+            answer:'Sony Interactive Entertainment',
+            points: 70
         },
         2:{
-            answer:'Impact Xplosion',
-            points: 56
+            answer:'Tencent Games',
+            points: 40
         },
         3:{
-            answer:'Championship Wrestling From Hollywood',
-            points: 30
+            answer:'Nintendo',
+            points: 34
         },
         4:{
-            answer:'Ring of Honor TV',
-            points: 29
+            answer:'Microsoft',
+            points: 32
         },
         5:{
-            answer: 'ECW Hardcore TV',
-            points: 26
+            answer: 'Activision Blizzard',
+            points: 24
         }
     },
     {
-        question:'Biggest Wrestling Events Except WrestleMania',
+        question:'Highest grossing video game franchises',
         1:{
-            answer:'Collision in Korea',
-            points:178
+            answer:'Pokémon',
+            points: 129
         },
         2:{
-            answer:'SummerSlam 92',
-            points:45
+            answer:'Star Wars',
+            points: 90
         },
         3:{
-            answer:'Super Show-Down',
-            points:39
+            answer:'Super Mario',
+            points: 48
         },
         4:{
-            answer:'Antonio Inoki Retirement',
-            points:38
+            answer:'Dragon Ball',
+            points: 33
         }
     },
     {
-        question:'Highest Rated Wrestling Games on Metacritic',
+        question:'Best-selling video games of all time',
         1:{
-            answer:'WWF SmackDown 2',
-            points: 136
+            answer:'Minecraft',
+            points: 196
         },
         2:{
-            answer:'WWF No Mercy',
-            points: 135
+            answer:'Grand Theft Auto V',
+            points: 124
         },
         3:{
-            answer:'WWE SmackDown Here come´s the pain',
-            points: 129
+            answer:'Tetris',
+            points: 80
         }
     }    
 ]
