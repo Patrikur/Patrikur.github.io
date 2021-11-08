@@ -1,0 +1,178 @@
+[
+    {
+        "title": "Akira",
+        "category": "movie",
+        "id": 149,
+        "trailer": "/akira.mp4",
+        "poster": "/s8nBVphsftoXRRbge4UIzbRngl8.jpg",
+        "logo" : "/TH5zE4t6WudGzUfSNqhBAsFpsm.svg"
+    },
+    {
+        "title": "Band of Brothers",
+        "category": "tv",
+        "id": 4613,
+        "trailer": "/band-of-brothers.mp4",
+        "poster": "/bhxhLB74EIvw0ZYyzT1DU0T6Pr7.jpg",
+        "logo" : "/yVd6PBGL5zCFCN8NhnxAP0i1Zjw.svg"
+    },
+    {
+        "title": "Blade Runner 2049",
+        "category": "movie",
+        "id": 335984,
+        "trailer": "/blade-runner.mp4",
+        "poster": "/AdYJMNhcXVeqjRenSHP88oaLCaC.jpg",
+        "logo" : "/jxl6vdZlH745zP1ZwqCkSHip3hl.png"
+    },
+    {
+        "title": "Drive",
+        "category": "movie",
+        "id": 64690,
+        "trailer": "/drive.mp4",
+        "poster": "/neqzBbcRycUCJehYEfVXhWcfizI.jpg",
+        "logo" : "/3joUcZ9dgqpOlJXxxA0b2M9mkx5.png"
+    },
+    {
+        "title": "The Breakfast Club",
+        "category": "movie",
+        "id": 2108,
+        "trailer": "/breakfast-club.mp4",
+        "poster": "/qpPFF8Sed5lkXngWraJdN8WkwDG.jpg",
+        "logo" : "/iyFNHG7CwqWHMPQI1FsDjczZx7I.png"
+    },
+    {
+        "title": "Chernobyl",
+        "category": "tv",
+        "id": 87108,
+        "trailer": "/chernobyl.mp4",
+        "poster": "/AnjfCb9FmnwAY1CXkR7CA8e70OK.jpg",
+        "logo" : "/aqK5Oop8piDnrszRsrwxWXLDYbT.png"
+    },
+    {
+        "title": "Fight Club",
+        "category": "movie",
+        "id": 550
+    },
+    {
+        "title": "Inside Out",
+        "category": "movie",
+        "id": 150540
+    },
+    {
+        "title": "Joker",
+        "category": "movie",
+        "id": 475557
+    },
+    {
+        "title": "Jurassic Park",
+        "category": "movie",
+        "id": 329
+    },
+    {
+        "title": "Lost in Translation",
+        "category": "movie",
+        "id": 153
+    },
+    {
+        "title": "Neon Genesis Evangelion",
+        "category": "tv",
+        "id": 890,
+        "trailer": "/neon-genesis-evangelion.mp4",
+        "poster": "/qtmlwuXj0VyJnCjnrvdpDjo15vI.jpg",
+        "logo" : "/sgAUBXAhed4r8MpBRShLDtTnlFA.png"
+    },
+    {
+        "title": "Predator",
+        "category": "movie",
+        "id": 106
+    },
+    {
+        "title": "Robin Hood - Men in Tights",
+        "category": "movie",
+        "id": 8005
+    },
+    {
+        "title": "Senna",
+        "category": "movie",
+        "id": 58496
+    },
+    {
+        "title": "South Park: The Movie",
+        "category": "movie",
+        "id": 9473
+    },
+    {
+        "title": "Spider-Man: A New Universe",
+        "category": "movie",
+        "id": 324857
+    },
+    {
+        "title": "Superbad",
+        "category": "movie",
+        "id": 8363
+    },
+    {
+        "title": "The Dark Knight",
+        "category": "movie",
+        "id": 155
+    },
+    {
+        "title": "The Godfather",
+        "category": "movie",
+        "id": 238
+    },
+    {
+        "title": "The Matrix",
+        "category": "movie",
+        "id": 603
+    },
+    {
+        "title": "The Wrestler",
+        "category": "movie",
+        "id": 12163
+    },
+    {
+        "title": "Toy Story 3",
+        "category": "movie",
+        "id": 10193
+    },
+    {
+        "title": "Up",
+        "category": "movie",
+        "id": 14160
+    },
+    {
+        "title": "Victoria",
+        "category": "movie",
+        "id": 320007
+    },
+    {
+        "title": "Whiplash",
+        "category": "movie",
+        "id": 244786
+    },
+    {
+        "title": "Game of Thrones",
+        "category": "tv",
+        "id": 1399
+    },
+    {
+        "title": "Whiplash",
+        "category": "movie",
+        "id": 244786
+    },
+    {
+        "title": "Black Mirror",
+        "category": "tv",
+        "id": 42009
+    },
+    {
+        "title": "BoJack Horseman",
+        "category": "tv",
+        "id": 61222
+    },
+    {
+        "title": "The Boys",
+        "category": "tv",
+        "id": 76479
+    }
+]

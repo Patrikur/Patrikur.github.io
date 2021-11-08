@@ -1,0 +1,754 @@
+@font-face {
+  font-family: 'Netflix Sans Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Netflix Sans Regular'),
+    url('./font/NetflixSansRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Netflix Sans Icon';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Netflix Sans Icon'),
+    url('./font/NetflixSansIcon.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Netflix Sans Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Netflix Sans Thin'),
+    url('./font/NetflixSansThin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Netflix Sans Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Netflix Sans Light'),
+    url('./font/NetflixSansLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Netflix Sans Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Netflix Sans Medium'),
+    url('./font/NetflixSansMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Netflix Sans Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Netflix Sans Bold'),
+    url('./font/NetflixSansBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Netflix Sans Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Netflix Sans Black'),
+    url('./font/NetflixSansBlack.woff') format('woff');
+}
+
+:root {
+  font-size: 14px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  position: relative;
+  font-family: 'Netflix Sans Regular';
+  background-color: #232323;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row;
+  height: 50px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 10%;
+}
+
+img {
+  height: 40px;
+  width: auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  width: 30%;
+}
+
+.menubar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row;
+  list-style-type: none;
+  width: 100%;
+}
+
+.menubar li a {
+  font-size: 1.3rem;
+  font-weight: 100;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.menubar li a:hover {
+  color: rgb(187, 181, 181);
+}
+
+.settings {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 5px 0;
+}
+
+.fa-search,
+.fa-bell,
+.fa-caret-down,
+.fa-caret-up {
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.fa-search:hover,
+.fa-bell:hover,
+.fa-caret-down:hover,
+.fa-caret-up:hover {
+  color: rgb(187, 181, 181);
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+}
+
+.searchbar-input {
+  height: 1.5rem;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.searchbar-input::placeholder {
+  color: rgb(85, 94, 95);
+  opacity: 1;
+  font-family: 'Netflix Sans Regular';
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row;
+}
+
+.username {
+  font-family: 'Netflix Sans Medium';
+  background-color: rgb(119, 119, 119);
+  font-size: 1.3rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+.top-media {
+  height: 100%;
+  width: 100%;
+  background-image: url('https://www.themoviedb.org/t/p/original/bhxhLB74EIvw0ZYyzT1DU0T6Pr7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.top-media-card {
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(85, 94, 95, 0.5);
+  border-radius: 10px;
+}
+
+.title {
+  font-family: 'Netflix Sans Bold';
+  color: white;
+  font-size: 4rem;
+}
+
+.description {
+  color: white;
+  font-size: 1.3rem;
+  padding: 5px 0 15px;
+}
+
+.top-media-card-buttons {
+  padding: 5px;
+}
+
+.btn-play,
+.btn-info {
+  font-family: inherit;
+  font-size: 1.15rem;
+  font-weight: bold;
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-play {
+  background-color: white;
+}
+
+.btn-info {
+  background-color: rgba(190, 190, 190, 0.3);
+  color: white;
+  margin: 0 10px;
+}
+
+.btn-info:hover {
+  background-color: rgba(92, 106, 107, 0.3);
+}
+
+.video-carousel {
+  margin: 0 20px 20px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row;
+  margin: 10px 0;
+}
+
+.item {
+  height: 150px;
+  width: 250px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#akira {
+  background-image: url('https://www.themoviedb.org/t/p/original/s8nBVphsftoXRRbge4UIzbRngl8.jpg');
+}
+
+#blade-runner {
+  background-image: url('https://www.themoviedb.org/t/p/original/AdYJMNhcXVeqjRenSHP88oaLCaC.jpg');
+}
+
+#drive {
+  background-image: url('https://www.themoviedb.org/t/p/original/neqzBbcRycUCJehYEfVXhWcfizI.jpg');
+}
+
+.item-logo {
+  width: 40%;
+  height: auto;
+  padding: 5px;
+}
+
+.item-card {
+  width: 375px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+.item-card-top {
+  height: 60%;
+  width: 100%;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.card-video {
+  width: auto;
+  height: 100%;
+}
+
+.item-card-top-menu {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  margin: 0 10px 0px;
+}
+
+.item-card-bottom {
+  height: 40%;
+  width: 100%;
+}
+
+.item-card-bottom-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.item-card-bottom-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+  font-size: 1.2rem;
+  color: white;
+  margin: 10px;
+}
+
+.media-info {
+  margin: 10px 0;
+}
+
+.match {
+  color: rgb(0, 196, 0);
+  margin-right: 10px;
+}
+
+.age {
+  border: 1px solid rgb(126, 126, 126);
+  padding: 1px 5px;
+  margin-right: 10px;
+}
+
+.year,
+.length {
+  margin-right: 10px;
+}
+
+.resolution {
+  font-size: 0.7rem;
+  border: 1px solid rgb(126, 126, 126);
+  border-radius: 5px;
+  padding: 1px 3px;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 10px 0;
+}
+
+.category {
+  margin-right: 10px;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: rgb(85, 94, 95);
+}
+
+.fa-circle {
+  font-size: 0.4rem;
+  color: rgb(126, 126, 126);
+}
+
+.big-item-card {
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  margin: 0 20px 20px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.big-card-video {
+  width: 100%;
+  height: auto;
+}
+
+.big-item-card-top-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: row;
+  padding: 10px;
+}
+
+.left-info {
+  width: 70%;
+}
+
+.media-info {
+  margin-bottom: 20px;
+}
+
+.ranking {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row;
+  margin-bottom: 20px;
+}
+
+.description-card {
+  margin-bottom: 20px;
+}
+
+.right-info {
+  font-size: 0.9rem;
+  width: 30%;
+  padding: 0 20px;
+}
+
+.cast-top {
+  margin-bottom: 20px;
+}
+
+.more {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+}
+
+.start {
+  color: grey;
+}
+
+.top-10 {
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  width: 18px;
+  height: 18px;
+  border: 1px solid red;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  margin-right: 10px;
+}
+
+.top-10-top {
+  font-size: 7px;
+  text-align: center;
+}
+
+.top-10-bottom {
+  font-size: 9px;
+  text-align: center;
+}
+
+hr {
+  margin: 0 10px;
+}
+
+.big-item-card-more {
+  padding: 20px 10px;
+}
+
+.recommendations-title {
+  padding: 10px 0;
+}
+
+.big-item-card-recommendations {
+  width: 225px;
+  height: 350px;
+  background-color: #3f3f3f;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.big-item-card-recommendations-top {
+  height: 35%;
+}
+
+.recommendations-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  margin-right: 5px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.big-item-card-recommendations-menu {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.big-item-card-recommendations-description {
+  padding: 10px;
+}
+
+.big-item-card-bottom-info {
+  padding: 10px;
+}
+
+.bottom-title {
+  padding: 20px 0;
+}
+
+#filmtitle {
+  font-family: 'Netflix Sans Bold';
+}
+
+.notifications {
+  width: 400px;
+  height: 250px;
+  border: 1px solid grey;
+  border-top: 2px solid white;
+  overflow-y: scroll;
+  margin: 20px;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row;
+  padding: 15px;
+  width: calc(100% - 30px);
+  height: calc(40% - 30px);
+  border-bottom: 1px solid grey;
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.notification:hover {
+  background-color: black;
+}
+
+.notification-picture {
+  width: 40%;
+  height: 100%;
+}
+
+.notification-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: column;
+  width: 60%;
+  height: 100%;
+  padding: 10px;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.notification-item-logo {
+  width: 75%;
+  height: auto;
+}
+
+.notification-date {
+  font-size: 0.9rem;
+  color: grey;
+  padding: 5px 0;
+}
+
+.settings-dropdown {
+  width: 200px;
+  border: 1px solid grey;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 0.9rem;
+}
+
+.profiles {
+  border-bottom: 1px solid grey;
+  padding: 10px;
+}
+
+.manage-settings {
+  padding: 10px 0;
+}
+
+.manage-settings * {
+  text-decoration: none;
+  color: white;
+}
+
+.manage-settings:hover {
+  text-decoration: underline;
+}
+
+.username-full {
+  padding: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.username-full:hover {
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: none;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.user-settings {
+  padding: 10px;
+}
+
+.settings-link {
+  text-decoration: none;
+  color: white;
+  font-family: 'Netflix Sans Bold';
+  padding: 5px 0;
+}
+
+.settings-link:hover {
+  text-decoration: underline;
+}
+
+.director,
+.cast,
+.writer,
+.genres,
+.rating {
+  margin-bottom: 10px;
+}
+
+.btn-add,
+.btn-info-card,
+.btn-like,
+.btn-dislike,
+.btn-close,
+.btn-open,
+.btn-mute,
+.btn-unmute,
+.btn-rewatch,
+.btn-check {
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 50%;
+  border: rgb(85, 94, 95) 2px solid;
+  background-color: #232323;
+  cursor: pointer;
+}
+
+.btn-add:hover,
+.btn-info-card:hover,
+.btn-like:hover,
+.btn-dislike:hover,
+.btn-close:hover,
+.btn-open:hover,
+.btn-mute:hover,
+.btn-unmute:hover,
+.btn-rewatch:hover,
+.btn-check:hover {
+  border-color: white;
+}
+
+.btn-play-card {
+  height: 3rem;
+  width: 3rem;
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-play:hover,
+.btn-play-card:hover {
+  background-color: rgb(226, 225, 225);
+  border-color: rgb(226, 225, 225);
+}
+
+button i {
+  padding: 5px;
+}
+
+.slider {
+  color: white;
+  font-size: 2rem;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
