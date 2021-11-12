@@ -77,18 +77,16 @@ header {
   z-index: 2;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-flow: row;
   height: 50px;
-  width: 100%;
 }
 
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  width: 10%;
+  height: 40px;
 }
 
 img {
@@ -99,26 +97,24 @@ img {
 .menu {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-flow: row;
-  width: 30%;
+  padding: 0 40px;
 }
 
 .menubar {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   flex-flow: row;
   list-style-type: none;
-  width: 100%;
+  padding-left: 25px;
 }
 
-.menubar li a {
-  font-size: 1.3rem;
+.menubar li * {
+  font-size: 1.1rem;
   font-weight: 100;
   text-decoration: none;
   color: white;
-  padding: 5px;
+  padding: 5px 15px;
 }
 
 .menubar li a:hover {
@@ -126,11 +122,10 @@ img {
 }
 
 .settings {
-  width: 60%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin: 0 5px 0;
+  padding: 0 40px;
 }
 
 .fa-search,
@@ -188,7 +183,7 @@ img {
   cursor: pointer;
 }
 
-main {
+.main {
   height: 100vh;
   width: 100%;
 }
@@ -253,6 +248,12 @@ main {
 
 .btn-info:hover {
   background-color: rgba(92, 106, 107, 0.3);
+}
+
+.top-media-bottom {
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(180deg, #111, rgba(85, 94, 95, 0.5));
 }
 
 .video-carousel {
@@ -746,9 +747,6 @@ button i {
   font-size: 2rem;
 }
 
-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.footer {
+  position: relative;
 }
