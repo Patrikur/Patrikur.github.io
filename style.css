@@ -245,7 +245,7 @@ main {
 .exp,
 .mon,
 .git,
-.github,
+.ts,
 .gimp,
 .mso,
 .vsc,
@@ -300,7 +300,7 @@ main {
   transition: width 0.7s ease-in-out;
 }
 
-.github.grow {
+.ts.grow {
   width: 70%;
   transition: width 0.7s ease-in-out;
 }
