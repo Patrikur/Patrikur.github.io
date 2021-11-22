@@ -6,7 +6,6 @@ import Films from './components/pages/Films';
 import Shows from './components/pages/Shows';
 import MyList from './components/pages/MyList';
 import Home from './components/pages/Home';
-import Footer from './components/layout/footer/Footer';
 
 const App = () => {
   return (
@@ -22,7 +21,6 @@ const App = () => {
           <Route path="/films" element={ <Films /> }>Films</Route>
           <Route path="/mylist" element={ <MyList /> }>My List</Route>  
         </Routes>
-        <Footer />
       </div>
     </BrowserRouter>
   );
