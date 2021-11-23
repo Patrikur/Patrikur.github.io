@@ -4,7 +4,7 @@ import UserSettings from './UserSettings';
 
 const SettingsDropdown = () => {
     return (
-        <div>
+        <div className="settings-dropdown">
             <Profiles />
             <UserSettings />
         </div>

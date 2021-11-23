@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import './stylesheet.css';
 import Menu from './components/layout/header/Menu';
 import Settings from './components/layout/header/Settings';
@@ -8,10 +9,20 @@ import MyList from './components/pages/MyList';
 import Home from './components/pages/Home';
 
 const App = () => {
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      setOffset(window.scrollY)
+    }
+  }, [0]);
+
+  console.log(offset);
+
   return (
     <BrowserRouter>
       <div className="App">
-        <header>
+        <header style={offset > 0 ? {backgroundImage: 'linear-gradient(180deg, #111111, #141414)'} : {backgroundColor: 'transparent'}}>
           <Menu />
           <Settings />
         </header>

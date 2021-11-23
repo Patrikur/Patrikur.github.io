@@ -1,6 +1,5 @@
 const header = document.getElementById('header');
 const nav = document.getElementById('nav');
-
 const scrollElements = document.querySelectorAll('.scroll');
 const skillElements = document.querySelectorAll('.skillbar');
 

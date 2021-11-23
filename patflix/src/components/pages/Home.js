@@ -11,9 +11,10 @@ const Home = () => {
                 <VideoCarousel />
                 <VideoCarousel />
                 <VideoCarousel />
-                <VideoCarousel />  
+                <VideoCarousel />
+                <Footer />  
             </div>
-            <Footer />
+            
         </div>
     )
 };

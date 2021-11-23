@@ -66,7 +66,7 @@
 body {
   position: relative;
   font-family: 'Netflix Sans Regular';
-  background-color: #232323;
+  background-color: #141414;
 }
 
 header {
@@ -122,6 +122,7 @@ img {
 }
 
 .settings {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -149,10 +150,6 @@ img {
   flex-flow: row;
 }
 
-input:focus {
-  outline: none;
-}
-
 .searchbar-input {
   width: 0;
   height: 0;
@@ -165,12 +162,92 @@ input:focus {
   width: 100%;
   transition: height 0.25s ease;
   transition: width 0.25s ease;
+  background-color: black;
+  border: 1px solid white;
 }
 
 .searchbar-input.active::placeholder {
-  color: rgb(85, 94, 95);
+  color: white;
   opacity: 1;
   font-family: 'Netflix Sans Regular';
+}
+
+.notifier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.notifier:hover .notifications {
+  display: block;
+}
+
+.notifications {
+  display: none;
+  position: absolute;
+  right: 40%;
+  top: 40%;
+  width: 200%;
+  height: 250px;
+  border: 1px solid grey;
+  border-top: 2px solid white;
+  overflow-y: scroll;
+  margin: 20px;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row;
+  padding: 15px;
+  width: calc(100% - 30px);
+  height: calc(40% - 30px);
+  border-bottom: 1px solid grey;
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.notification:hover {
+  background-color: black;
+}
+
+.notification-picture {
+  width: 40%;
+  height: 100%;
+}
+
+.notification-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: column;
+  width: 60%;
+  height: 100%;
+  padding: 10px;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.notification-item-logo {
+  width: 75%;
+  height: auto;
+}
+
+.notification-date {
+  font-size: 0.9rem;
+  color: grey;
+  padding: 5px 0;
 }
 
 .user {
@@ -190,6 +267,77 @@ input:focus {
   text-align: center;
   color: white;
   cursor: pointer;
+}
+
+.user:hover .settings-dropdown {
+  display: block;
+}
+
+.settings-dropdown {
+  display: none;
+  position: absolute;
+  top: 40%;
+  right: 30px;
+  width: 200px;
+  border: 1px solid grey;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 0.9rem;
+}
+
+.profiles {
+  border-bottom: 1px solid grey;
+  padding: 10px;
+}
+
+.manage-settings {
+  padding: 10px 0;
+}
+
+.manage-settings * {
+  text-decoration: none;
+  color: white;
+}
+
+.manage-settings:hover {
+  text-decoration: underline;
+}
+
+.username-full {
+  padding: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.username-full:hover {
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: none;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.user-settings {
+  padding: 10px;
+}
+
+.settings-link {
+  text-decoration: none;
+  color: white;
+  font-family: 'Netflix Sans Bold';
+  padding: 5px 0;
+}
+
+.settings-link:hover {
+  text-decoration: underline;
 }
 
 .main {
@@ -266,12 +414,7 @@ input:focus {
   margin-top: 1%;
   height: 20%;
   width: 100%;
-  background-image: linear-gradient(
-    180deg,
-    transparent,
-    #111111,
-    rgba(35, 35, 35)
-  );
+  background-image: linear-gradient(180deg, transparent, #111111, #141414);
 }
 
 .media-body {
@@ -576,132 +719,6 @@ hr {
 
 #filmtitle {
   font-family: 'Netflix Sans Bold';
-}
-
-.notifications {
-  width: 400px;
-  height: 250px;
-  border: 1px solid grey;
-  border-top: 2px solid white;
-  overflow-y: scroll;
-  margin: 20px;
-}
-
-.notification {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-flow: row;
-  padding: 15px;
-  width: calc(100% - 30px);
-  height: calc(40% - 30px);
-  border-bottom: 1px solid grey;
-  color: white;
-  font-size: 1.2rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-}
-
-.notification:hover {
-  background-color: black;
-}
-
-.notification-picture {
-  width: 40%;
-  height: 100%;
-}
-
-.notification-info {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-flow: column;
-  width: 60%;
-  height: 100%;
-  padding: 10px;
-}
-
-.notification-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
-}
-
-.notification-item-logo {
-  width: 75%;
-  height: auto;
-}
-
-.notification-date {
-  font-size: 0.9rem;
-  color: grey;
-  padding: 5px 0;
-}
-
-.settings-dropdown {
-  width: 200px;
-  border: 1px solid grey;
-  margin: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 0.9rem;
-}
-
-.profiles {
-  border-bottom: 1px solid grey;
-  padding: 10px;
-}
-
-.manage-settings {
-  padding: 10px 0;
-}
-
-.manage-settings * {
-  text-decoration: none;
-  color: white;
-}
-
-.manage-settings:hover {
-  text-decoration: underline;
-}
-
-.username-full {
-  padding: 0 10px;
-  text-decoration: none;
-  color: white;
-}
-
-.username-full:hover {
-  text-decoration: underline;
-}
-
-li {
-  list-style-type: none;
-}
-
-.profile {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 5px 0;
-}
-
-.user-settings {
-  padding: 10px;
-}
-
-.settings-link {
-  text-decoration: none;
-  color: white;
-  font-family: 'Netflix Sans Bold';
-  padding: 5px 0;
-}
-
-.settings-link:hover {
-  text-decoration: underline;
 }
 
 .director,
