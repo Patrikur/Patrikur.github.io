@@ -67,10 +67,11 @@ body {
   position: relative;
   font-family: 'Netflix Sans Regular';
   background-color: #141414;
+  height: 100%;
 }
 
 header {
-  width: 100%;
+  width: 94%;
   position: fixed;
   left: 0;
   top: 0;
@@ -80,6 +81,7 @@ header {
   justify-content: space-between;
   flex-flow: row;
   height: 70px;
+  padding: 0 3%;
 }
 
 .logo {
@@ -99,7 +101,6 @@ img {
   align-items: center;
   justify-content: space-between;
   flex-flow: row;
-  padding: 0 40px;
 }
 
 .menubar {
@@ -126,7 +127,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 40px;
 }
 
 .fa-search,
@@ -135,7 +135,16 @@ img {
   color: white;
   cursor: pointer;
   font-size: 1.1rem;
+}
+
+.fa-search,
+.fa-bell,
+.user {
   padding: 10px;
+}
+
+.fa-caret-down {
+  padding: 5px;
 }
 
 .fa-caret-down.rotate {
@@ -152,7 +161,7 @@ img {
 
 .searchbar-input {
   width: 0;
-  height: 0;
+  border: none;
 }
 
 .searchbar-input.active {
@@ -186,14 +195,13 @@ img {
 .notifications {
   display: none;
   position: absolute;
-  right: 40%;
-  top: 40%;
-  width: 200%;
+  right: 55%;
+  top: 130%;
+  width: 225%;
   height: 250px;
   border: 1px solid grey;
   border-top: 2px solid white;
   overflow-y: scroll;
-  margin: 20px;
 }
 
 .notification {
@@ -260,9 +268,9 @@ img {
 .username {
   font-family: 'Netflix Sans Medium';
   background-color: rgb(119, 119, 119);
-  font-size: 1.3rem;
-  height: 1.5rem;
-  width: 1.5rem;
+  font-size: 1.5rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 5px;
   text-align: center;
   color: white;
@@ -276,11 +284,10 @@ img {
 .settings-dropdown {
   display: none;
   position: absolute;
-  top: 40%;
-  right: 30px;
+  top: 130%;
+  right: 10%;
   width: 200px;
   border: 1px solid grey;
-  margin: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 0.9rem;
@@ -362,7 +369,7 @@ li {
 .top-media-card {
   width: 40%;
   padding: 10px;
-  margin: 10px;
+  margin: 0 3%;
   background-color: rgba(85, 94, 95, 0.5);
   border-radius: 10px;
 }
@@ -421,12 +428,20 @@ li {
   position: absolute;
   top: 90%;
   left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .video-carousel {
-  margin: 0 20px 20px;
+  width: 100%;
+  height: 25%;
+  padding-bottom: 10vh;
   color: white;
   font-size: 1.1rem;
+}
+
+.list-name {
+  padding: 0 3%;
 }
 
 .items {
@@ -434,14 +449,14 @@ li {
   align-items: center;
   justify-content: flex-start;
   flex-flow: row;
-  margin: 10px 0;
+  padding: 10px 3%;
 }
 
 .item {
-  height: 150px;
-  width: 250px;
-  border-radius: 5px;
-  margin-right: 5px;
+  height: 20vh;
+  width: 20%;
+  border-radius: 2px;
+  margin-right: 0.5%;
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: cover;
@@ -450,15 +465,15 @@ li {
   justify-content: flex-start;
 }
 
-#akira {
+#number1 {
   background-image: url('https://www.themoviedb.org/t/p/original/s8nBVphsftoXRRbge4UIzbRngl8.jpg');
 }
 
-#blade-runner {
+#number2 {
   background-image: url('https://www.themoviedb.org/t/p/original/AdYJMNhcXVeqjRenSHP88oaLCaC.jpg');
 }
 
-#drive {
+#number3 {
   background-image: url('https://www.themoviedb.org/t/p/original/neqzBbcRycUCJehYEfVXhWcfizI.jpg');
 }
 

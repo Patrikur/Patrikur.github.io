@@ -7,17 +7,17 @@ const Profiles = () => {
                 <li>
                 <div className="profile">
                     <div className="username"><span>K</span></div>
-                    <a href="#" className="username-full">Kids</a>
+                    <a href="http://netflix.com" className="username-full">Kids</a>
                 </div>
                 </li>
                 <li>
                 <div className="profile">
                     <div className="username"><span>G</span></div>
-                    <a href="#" className="username-full">Guest</a>
+                    <a href="http://netflix.com" className="username-full">Guest</a>
                 </div>
                 </li>
             </ul>
-            <div className="manage-settings"><a href="#">Manage Settings</a></div>
+            <div className="manage-settings"><a href="http://netflix.com">Manage Settings</a></div>
         </div>
     )
 };

@@ -15,7 +15,7 @@ const App = () => {
     window.onscroll = () => {
       setOffset(window.scrollY)
     }
-  }, [0]);
+  }, []);
 
   console.log(offset);
 
