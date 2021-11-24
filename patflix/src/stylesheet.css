@@ -449,7 +449,34 @@ li {
   align-items: center;
   justify-content: flex-start;
   flex-flow: row;
-  padding: 10px 3%;
+  padding: 10px 0;
+}
+
+.left,
+.right {
+  width: 3%;
+  cursor: pointer;
+  text-align: center;
+  overflow-x: visible;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+  font-size: 2.5rem;
+  display: none;
+}
+
+.items:hover .fa-chevron-right,
+.items:hover .fa-chevron-left {
+  display: block;
+}
+
+.middle {
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .item {

@@ -17,8 +17,6 @@ const App = () => {
     }
   }, []);
 
-  console.log(offset);
-
   return (
     <BrowserRouter>
       <div className="App">
