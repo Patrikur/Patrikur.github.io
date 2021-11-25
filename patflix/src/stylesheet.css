@@ -354,7 +354,7 @@ li {
 }
 
 .top-media {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-image: url('https://www.themoviedb.org/t/p/original/bhxhLB74EIvw0ZYyzT1DU0T6Pr7.jpg');
   background-repeat: no-repeat;
@@ -434,7 +434,7 @@ li {
 
 .video-carousel {
   width: 100%;
-  height: 25%;
+  height: 25vh;
   padding-bottom: 10vh;
   color: white;
   font-size: 1.1rem;
@@ -490,6 +490,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.item:last-of-type {
+  margin-right: 0;
 }
 
 #number1 {
