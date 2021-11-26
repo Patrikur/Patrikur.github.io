@@ -447,7 +447,7 @@ li {
 .items {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-flow: row;
   padding: 10px 0;
 }
@@ -456,8 +456,10 @@ li {
 .right {
   width: 3%;
   cursor: pointer;
-  text-align: center;
-  overflow-x: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
 }
 
 .fa-chevron-right,
@@ -472,7 +474,7 @@ li {
 }
 
 .middle {
-  width: 96%;
+  width: 94%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -481,19 +483,15 @@ li {
 
 .item {
   height: 20vh;
-  width: 20%;
+  width: 20vw;
   border-radius: 2px;
-  margin-right: 0.5%;
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-
-.item:last-of-type {
-  margin-right: 0;
+  margin-right: 0.5%;
 }
 
 #number1 {
@@ -832,4 +830,76 @@ button i {
 .slider {
   color: white;
   font-size: 2rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.social-icons li {
+  margin-right: 50%;
+}
+
+.fa-facebook-square,
+.fa-instagram,
+.fa-youtube {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.link-container {
+  width: 100%;
+}
+
+.link-container *,
+.copyright,
+.service-code {
+  margin: 15px 10px 0 0;
+  color: grey;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.link-container *:first-of-type {
+  margin-top: 5px;
+}
+
+.link-container ul li a:hover {
+  text-decoration: underline;
+}
+
+.service-code {
+  border: 1px solid grey;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.service-code:hover {
+  color: white;
 }

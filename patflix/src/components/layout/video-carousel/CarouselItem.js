@@ -3,7 +3,9 @@ import React from 'react';
 const CarouselItem = () => {
     return (
         <div className="items">
-          <div className="left"><i class="fas fa-chevron-left"></i></div>
+          <div className="left"><i class="fas fa-chevron-left">
+            </i>
+          </div>
           <div className="middle">
             <div className="item" id="number1">
               <img
