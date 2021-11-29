@@ -5,8 +5,12 @@ import UserSettings from './UserSettings';
 const SettingsDropdown = () => {
     return (
         <div className="settings-dropdown">
-            <Profiles />
-            <UserSettings />
+            <div className="settings-dropdown-top"></div>
+            <div className="settings-dropdown-bottom">
+                <Profiles />
+                <UserSettings />
+            </div>
+            
         </div>
     )
 }
