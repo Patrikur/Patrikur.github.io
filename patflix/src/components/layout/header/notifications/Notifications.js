@@ -4,10 +4,13 @@ import Notification from './Notification';
 const Notifications = () => {
     return (
         <div className="notifications">
-            <Notification />
-            <Notification />
-            <Notification />
-        </div>
+            <div className="notifications-top"><i className='fas fa-caret-up'></i></div>
+            <div className="notifications-bottom">
+                <Notification />
+                <Notification />
+                <Notification />
+            </div> 
+        </div>   
     )
 }
 

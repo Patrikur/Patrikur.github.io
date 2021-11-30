@@ -195,10 +195,18 @@ img {
 .notifications {
   display: none;
   position: absolute;
-  right: 55%;
-  top: 130%;
-  width: 225%;
-  height: 250px;
+  right: 140%;
+  top: 90%;
+}
+
+.notifications-top {
+  text-align: right;
+  margin-right: 1%;
+}
+
+.notifications-bottom {
+  width: 200%;
+  height: 25vh;
   border: 1px solid grey;
   border-top: 2px solid white;
   overflow-y: scroll;
@@ -284,9 +292,19 @@ img {
 .settings-dropdown {
   display: none;
   position: absolute;
-  top: 130%;
+  top: 90%;
   right: 10%;
   width: 150%;
+}
+
+.settings-dropdown-top {
+  text-align: right;
+  margin-right: 12%;
+}
+
+.fa-caret-up {
+  color: white;
+  font-size: 1.5rem;
 }
 
 .settings-dropdown-bottom {
