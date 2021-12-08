@@ -8,6 +8,7 @@ You can find the code for my current projects as well as my portfolio in this re
 * [Grotenburg-Supporters](#grotenburg-supporters)
 * [eNay - The Lazy Onlineshop](#enay---the-lazy-onlineshop)
 * [Family Feud Browser Game](#family-feud-browser-game)
+* [Patflix - Netflix Replica](#patflix---netflix-replica)
 
 ## [Portfolio page](https://patrikur.github.io)
 ### Table of content
@@ -104,7 +105,27 @@ Recreation of the score- and gameboard from the German version of the gameshow [
 * playing sounds from the German version of the show (not working yet)
 * running on the imported array that can be modified for other quiz topics
 
-<!---
-Patrikur/Patrikur is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+## Patflix - Netflix Replica
+### Table of content
+* [Project Info](#project-info)
+* [Technologies](#technologies)
+* [Features](#features)
+
+### Project Info
+A replica of the Netflix desktop website featuring my favorite films and series. Work in progress, not finished yet.
+
+### Technologies
+Project created with:
+* React
+* React-Hooks
+* CSS3* 
+* [Fontawesome library](https://fontawesome.com/)
+* [The Internet Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction)
+* JSON database of favorite films and series
+
+### Features
+* Menubar changing background on scrolling
+* Hovering user settings and notifications dropdown menu
+* Notifications dropdown fetching data from API
+* Video carousel for different categories, fetching data from API
+* Footer with randomlt generated service code when clicked on
