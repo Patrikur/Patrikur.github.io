@@ -118,7 +118,7 @@ A replica of the Netflix desktop website featuring my favorite films and series.
 Project created with:
 * React
 * React-Hooks
-* CSS3* 
+* CSS3
 * [Fontawesome library](https://fontawesome.com/)
 * [The Internet Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction)
 * JSON database of favorite films and series
