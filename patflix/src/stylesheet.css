@@ -195,17 +195,19 @@ img {
 .notifications {
   display: none;
   position: absolute;
-  right: 140%;
+  right: 55%;
   top: 90%;
 }
 
 .notifications-top {
-  text-align: right;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
   margin-right: 1%;
 }
 
 .notifications-bottom {
-  width: 200%;
+  width: 20vw;
   height: 25vh;
   border: 1px solid grey;
   border-top: 2px solid white;
